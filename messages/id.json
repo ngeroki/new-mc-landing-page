@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "catalog": "Katalog",
+    "advantages": "Keunggulan",
+    "contact": "Hubungi Kami"
+  },
+  "hero": {
+    "headline": "Sandal Lokal, Kualitas untuk Seluruh Nusantara",
+    "subheadline": "New MC adalah pemasok grosir sandal terpercaya untuk toko-toko di seluruh Indonesia.",
+    "whatsapp": "Hubungi via WhatsApp",
+    "catalog": "Lihat Katalog"
+  },
+  "credibility": {
+    "title": "Mengapa Memilih New MC",
+    "quality": {
+      "title": "Kualitas Konsisten",
+      "description": "Setiap produk melalui kontrol kualitas ketat untuk memastikan standar tinggi yang konsisten."
+    },
+    "price": {
+      "title": "Harga Grosir Kompetitif",
+      "description": "Harga grosir yang kompetitif dengan volume diskon untuk pesanan besar."
+    },
+    "shipping": {
+      "title": "Siap Kirim ke Seluruh Indonesia",
+      "description": "Layanan pengiriman ke seluruh provinsi di Indonesia dengan jaringan logistik yang handal."
+    }
+  },
+  "story": {
+    "title": "Tentang New MC",
+    "content": "New MC telah berdiri selama bertahun-tahun sebagai pemasok grosir sandal terpercaya di Indonesia. Kami fokus pada bisnis grosir dan melayani pemilik toko di berbagai provinsi di seluruh Nusantara. Dengan komitmen pada kualitas produk yang stabil dan reliable, kami telah membangun kepercayaan dari ratusan mitra bisnis yang mempercayakan kebutuhan sandal mereka kepada kami."
+  },
+  "products": {
+    "title": "Ragam Produk Kami",
+    "subtitle": "Koleksi lengkap sandal untuk berbagai kebutuhan",
+    "men": {
+      "title": "Sandal Pria",
+      "description": "Koleksi sandal pria dengan berbagai model dan ukuran untuk kebutuhan grosir Anda."
+    },
+    "women": {
+      "title": "Sandal Wanita",
+      "description": "Sandal wanita dengan desain modern dan nyaman, tersedia dalam berbagai pilihan."
+    },
+    "kids": {
+      "title": "Sandal Anak",
+      "description": "Sandal anak yang aman dan nyaman dengan berbagai karakter dan warna menarik."
+    },
+    "flipflop": {
+      "title": "Sandal Jepit",
+      "description": "Sandal jepit berkualitas dengan harga grosir yang kompetitif."
+    },
+    "slipper": {
+      "title": "Sandal Selop",
+      "description": "Sandal selop nyaman untuk penggunaan sehari-hari dengan kualitas terjamin."
+    },
+    "casual": {
+      "title": "Sandal Kasual",
+      "description": "Sandal kasual dengan desain trendi untuk berbagai kesempatan."
+    },
+    "viewCatalog": "Lihat Katalog Lengkap"
+  },
+  "testimonials": {
+    "title": "Apa Kata Mitra Kami",
+    "testimonial1": {
+      "text": "Sejak bekerja sama dengan New MC, penjualan toko saya meningkat signifikan. Kualitas produk konsisten dan pelayanan sangat baik.",
+      "author": "Bapak Ahmad, Pemilik Toko Sandal Jakarta"
+    },
+    "testimonial2": {
+      "text": "Harga grosir yang kompetitif dan pengiriman cepat membuat New MC menjadi pilihan utama kami. Sangat direkomendasikan!",
+      "author": "Ibu Siti, Distributor Sandal Bandung"
+    },
+    "testimonial3": {
+      "text": "Kualitas sandal dari New MC sangat stabil, tidak pernah mengecewakan. Pelanggan kami selalu puas dengan produknya.",
+      "author": "Bapak Budi, Toko Sandal Surabaya"
+    }
+  },
+  "cta": {
+    "headline": "Siap Memperluas Koleksi Toko Anda?",
+    "subheadline": "Kami melayani pemesanan grosir dalam skala besar maupun kecil.",
+    "button": "Hubungi via WhatsApp"
+  },
+  "footer": {
+    "address": "Jakarta, Indonesia",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "copyright": "© 2024 New MC. All rights reserved."
+  }
+}
+

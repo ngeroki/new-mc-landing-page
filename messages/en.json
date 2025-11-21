@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "catalog": "Catalog",
+    "advantages": "Advantages",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "headline": "Local Sandals, Quality for the Entire Archipelago",
+    "subheadline": "New MC is a trusted wholesale sandal supplier for stores throughout Indonesia.",
+    "whatsapp": "Contact via WhatsApp",
+    "catalog": "View Catalog"
+  },
+  "credibility": {
+    "title": "Why Choose New MC",
+    "quality": {
+      "title": "Consistent Quality",
+      "description": "Every product goes through strict quality control to ensure consistently high standards."
+    },
+    "price": {
+      "title": "Competitive Wholesale Prices",
+      "description": "Competitive wholesale prices with volume discounts for large orders."
+    },
+    "shipping": {
+      "title": "Ready to Ship Throughout Indonesia",
+      "description": "Shipping services to all provinces in Indonesia with a reliable logistics network."
+    }
+  },
+  "story": {
+    "title": "About New MC",
+    "content": "New MC has been established for many years as a trusted wholesale sandal supplier in Indonesia. We focus on wholesale business and serve store owners in various provinces throughout the archipelago. With a commitment to stable and reliable product quality, we have built trust from hundreds of business partners who entrust their sandal needs to us."
+  },
+  "products": {
+    "title": "Our Product Range",
+    "subtitle": "Complete collection of sandals for various needs",
+    "men": {
+      "title": "Men's Sandals",
+      "description": "Collection of men's sandals with various models and sizes for your wholesale needs."
+    },
+    "women": {
+      "title": "Women's Sandals",
+      "description": "Women's sandals with modern and comfortable designs, available in various options."
+    },
+    "kids": {
+      "title": "Kids' Sandals",
+      "description": "Safe and comfortable children's sandals with various characters and attractive colors."
+    },
+    "flipflop": {
+      "title": "Flip Flops",
+      "description": "Quality flip flops with competitive wholesale prices."
+    },
+    "slipper": {
+      "title": "Slippers",
+      "description": "Comfortable slippers for daily use with guaranteed quality."
+    },
+    "casual": {
+      "title": "Casual Sandals",
+      "description": "Casual sandals with trendy designs for various occasions."
+    },
+    "viewCatalog": "View Full Catalog"
+  },
+  "testimonials": {
+    "title": "What Our Partners Say",
+    "testimonial1": {
+      "text": "Since working with New MC, my store's sales have increased significantly. Product quality is consistent and service is excellent.",
+      "author": "Mr. Ahmad, Sandal Store Owner Jakarta"
+    },
+    "testimonial2": {
+      "text": "Competitive wholesale prices and fast shipping make New MC our top choice. Highly recommended!",
+      "author": "Mrs. Siti, Sandal Distributor Bandung"
+    },
+    "testimonial3": {
+      "text": "The quality of sandals from New MC is very stable, never disappointing. Our customers are always satisfied with the products.",
+      "author": "Mr. Budi, Sandal Store Surabaya"
+    }
+  },
+  "cta": {
+    "headline": "Ready to Expand Your Store's Collection?",
+    "subheadline": "We serve wholesale orders in both large and small scales.",
+    "button": "Contact via WhatsApp"
+  },
+  "footer": {
+    "address": "Jakarta, Indonesia",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "copyright": "© 2024 New MC. All rights reserved."
+  }
+}
+
