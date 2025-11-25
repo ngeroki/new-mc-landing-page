@@ -12,7 +12,7 @@ export default function CTA() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="contact" className="py-24 bg-soft-beige" ref={ref}>
+    <section id="contact" className="py-24 bg-[#FDFBF7]" ref={ref}>
       <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         'deep-brown': '#4A3424',
         'warm-sand': '#C9A66B',
-        'soft-beige': '#E6D8C3',
+        'soft-beige': '#FDFBF7',
         'muted-brown': '#8C6E54',
       },
       fontFamily: {

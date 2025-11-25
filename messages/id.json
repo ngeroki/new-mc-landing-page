@@ -1,10 +1,10 @@
 {
   "nav": {
     "home": "Beranda",
-    "about": "Tentang Kami",
+    "about": "Tentang",
     "catalog": "Katalog",
     "advantages": "Keunggulan",
-    "contact": "Hubungi Kami"
+    "contact": "Kontak"
   },
   "hero": {
     "headline": "Sandal Lokal, Kualitas untuk Seluruh Nusantara",
@@ -87,4 +87,3 @@
     "copyright": "© 2024 New MC. All rights reserved."
   }
 }
-

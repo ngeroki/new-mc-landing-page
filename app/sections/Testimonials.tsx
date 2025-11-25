@@ -17,7 +17,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-24 bg-soft-beige" ref={ref}>
+    <section className="py-24 bg-[#FEF1DE]" ref={ref}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

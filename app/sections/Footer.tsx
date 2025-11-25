@@ -17,7 +17,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-deep-brown text-white py-12">
+    <footer
+      className="text-deep-brown py-12 relative"
+      style={{
+        backgroundImage: 'url(/images/footer-background.png)',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'cover'
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo */}
@@ -25,7 +32,7 @@ export default function Footer() {
             <Link href={`/${locale}/`} className="text-2xl font-heading font-bold mb-4 inline-block">
               New MC
             </Link>
-            <p className="text-white/80 mb-4">
+            <p className="text-deep-brown/80 mb-4">
               {t('address')}
             </p>
           </div>
@@ -36,13 +43,13 @@ export default function Footer() {
             <div className="space-y-2">
               <button
                 onClick={handleWhatsApp}
-                className="block text-white/80 hover:text-warm-sand transition-colors"
+                className="block text-deep-brown/80 hover:text-warm-sand transition-colors"
               >
                 {t('whatsapp')}
               </button>
               <a
                 href="mailto:info@newmc.com"
-                className="block text-white/80 hover:text-warm-sand transition-colors"
+                className="block text-deep-brown/80 hover:text-warm-sand transition-colors"
               >
                 {t('email')}
               </a>
@@ -55,7 +62,7 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-white/80 hover:text-warm-sand transition-colors"
+                className="text-deep-brown/80 hover:text-warm-sand transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -64,7 +71,7 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                className="text-white/80 hover:text-warm-sand transition-colors"
+                className="text-deep-brown/80 hover:text-warm-sand transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -75,11 +82,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 pt-8 text-center text-white/60 text-sm">
+        <div className="border-t border-deep-brown/20 pt-8 text-center text-deep-brown/60 text-sm">
           <p>{t('copyright')}</p>
         </div>
       </div>
     </footer>
   );
 }
-

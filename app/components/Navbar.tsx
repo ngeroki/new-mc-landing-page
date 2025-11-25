@@ -20,42 +20,53 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { key: 'home', href: `/${locale}/` },
-    { key: 'about', href: `/${locale}/#about` },
-    { key: 'catalog', href: `/${locale}/#catalog` },
-    { key: 'advantages', href: `/${locale}/#advantages` },
-    { key: 'contact', href: `/${locale}/#contact` },
+    { key: 'about', href: '/about' },
+    { key: 'catalog', href: '/catalog' },
+    { key: 'contact', href: '/contact' },
   ];
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300 ${
-        isScrolled ? 'shadow-md' : 'shadow-sm'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 bg-[#FDFBF7] transition-shadow duration-300 ${isScrolled ? 'shadow-md' : 'shadow-sm'
+        }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href={`/${locale}/`} className="text-2xl md:text-3xl font-heading font-bold text-deep-brown hover:text-warm-sand transition-colors">
-            New MC
-          </Link>
+      <div className="w-full px-6 md:px-12 lg:px-24">
+        <div className="flex items-center justify-between h-24">
 
-          {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Left: Navigation Links */}
+          <div className="hidden md:flex items-center space-x-8 flex-1 justify-start">
             {navLinks.map((link) => (
               <Link
                 key={link.key}
                 href={link.href}
-                className="text-base font-medium text-deep-brown hover:text-warm-sand transition-colors duration-200"
+                className="text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors duration-200"
               >
                 {t(link.key)}
               </Link>
             ))}
+          </div>
+
+          {/* Center: Logo */}
+          <div className="flex-1 flex justify-center">
+            <Link href="/" className="flex items-center">
+              <div className="relative h-20 w-auto">
+                <img
+                  src="/images/new-mc-logo-v5.png"
+                  alt="New MC Logo"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+            </Link>
+          </div>
+
+          {/* Right: Actions (Language Switcher for now) */}
+          <div className="hidden md:flex items-center space-x-6 flex-1 justify-end">
+            {/* Placeholder for Search/Account/Cart icons if needed later */}
             <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4">
+          <div className="md:hidden flex items-center space-x-4 absolute right-6">
             <LanguageSwitcher />
             <MobileMenu navLinks={navLinks} t={t} locale={locale} />
           </div>
@@ -72,7 +83,7 @@ function MobileMenu({ navLinks, t, locale }: { navLinks: any[], t: any, locale: 
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 text-deep-brown"
+        className="p-2 text-deep-brown hover:text-muted-brown"
         aria-label="Toggle menu"
       >
         <svg
@@ -93,14 +104,14 @@ function MobileMenu({ navLinks, t, locale }: { navLinks: any[], t: any, locale: 
       </button>
 
       {isOpen && (
-        <div className="absolute top-20 left-0 right-0 bg-white shadow-lg border-t">
+        <div className="absolute top-24 left-0 right-0 bg-[#FDFBF7] shadow-lg border-t border-deep-brown/10">
           <div className="px-6 py-4 space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.key}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-base font-medium text-deep-brown hover:text-warm-sand transition-colors"
+                className="block text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors"
               >
                 {t(link.key)}
               </Link>
@@ -111,4 +122,3 @@ function MobileMenu({ navLinks, t, locale }: { navLinks: any[], t: any, locale: 
     </>
   );
 }
-

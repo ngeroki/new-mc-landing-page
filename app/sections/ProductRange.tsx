@@ -65,7 +65,7 @@ export default function ProductRange() {
                   {t(`${product.key}.description`)}
                 </p>
                 <Link
-                  href={`/${locale}/#catalog`}
+                  href="/#catalog"
                   className="inline-block text-warm-sand font-semibold hover:text-deep-brown transition-colors"
                 >
                   {t('viewCatalog')} →
