@@ -1,0 +1,6 @@
+HEBBY
+Modal : flat 340/kd
+high 380/kd
+Jual : flat 420/kd
+high 460/kd
+Sol simplek.

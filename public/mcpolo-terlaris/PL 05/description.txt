@@ -1,0 +1,6 @@
+PL 05
+Modal : flat 360/kd
+high 400/kd
+Jual : flat 440/kd
+high 480/kd
+Sol simplek.

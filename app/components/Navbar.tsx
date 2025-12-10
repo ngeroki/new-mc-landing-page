@@ -35,15 +35,56 @@ export default function Navbar() {
 
           {/* Left: Navigation Links */}
           <div className="hidden md:flex items-center space-x-8 flex-1 justify-start">
-            {navLinks.map((link) => (
+            <Link
+              href="/about"
+              className="text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors duration-200"
+            >
+              {t('about')}
+            </Link>
+
+            {/* Catalog Dropdown */}
+            <div className="relative group">
               <Link
-                key={link.key}
-                href={link.href}
-                className="text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors duration-200"
+                href="/catalog"
+                className="text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors duration-200 flex items-center gap-1"
               >
-                {t(link.key)}
+                {t('catalog')}
+                <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </Link>
-            ))}
+
+              {/* Dropdown Menu */}
+              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-deep-brown/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  <Link
+                    href="/catalog"
+                    className="block px-4 py-2 text-sm text-deep-brown hover:bg-[#FDFBF7] transition-colors"
+                  >
+                    📦 All Products
+                  </Link>
+                  <Link
+                    href="/new-arrivals"
+                    className="block px-4 py-2 text-sm text-deep-brown hover:bg-[#FDFBF7] transition-colors"
+                  >
+                    ✨ New Arrivals
+                  </Link>
+                  <Link
+                    href="/best-sellers"
+                    className="block px-4 py-2 text-sm text-deep-brown hover:bg-[#FDFBF7] transition-colors"
+                  >
+                    🔥 Best Sellers
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <Link
+              href="/contact"
+              className="text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors duration-200"
+            >
+              {t('contact')}
+            </Link>
           </div>
 
           {/* Center: Logo */}
@@ -78,6 +119,7 @@ export default function Navbar() {
 
 function MobileMenu({ navLinks, t, locale }: { navLinks: any[], t: any, locale: string }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [catalogOpen, setCatalogOpen] = useState(false);
 
   return (
     <>
@@ -106,16 +148,59 @@ function MobileMenu({ navLinks, t, locale }: { navLinks: any[], t: any, locale: 
       {isOpen && (
         <div className="absolute top-24 left-0 right-0 bg-[#FDFBF7] shadow-lg border-t border-deep-brown/10">
           <div className="px-6 py-4 space-y-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.key}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="block text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors"
+            <Link
+              href="/about"
+              onClick={() => setIsOpen(false)}
+              className="block text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors"
+            >
+              {t('about')}
+            </Link>
+
+            {/* Catalog Section */}
+            <div>
+              <button
+                onClick={() => setCatalogOpen(!catalogOpen)}
+                className="w-full flex items-center justify-between text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors"
               >
-                {t(link.key)}
-              </Link>
-            ))}
+                {t('catalog')}
+                <svg className={`w-4 h-4 transition-transform ${catalogOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {catalogOpen && (
+                <div className="mt-2 ml-4 space-y-2">
+                  <Link
+                    href="/catalog"
+                    onClick={() => setIsOpen(false)}
+                    className="block text-sm text-deep-brown hover:text-muted-brown transition-colors"
+                  >
+                    📦 All Products
+                  </Link>
+                  <Link
+                    href="/new-arrivals"
+                    onClick={() => setIsOpen(false)}
+                    className="block text-sm text-deep-brown hover:text-muted-brown transition-colors"
+                  >
+                    ✨ New Arrivals
+                  </Link>
+                  <Link
+                    href="/best-sellers"
+                    onClick={() => setIsOpen(false)}
+                    className="block text-sm text-deep-brown hover:text-muted-brown transition-colors"
+                  >
+                    🔥 Best Sellers
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link
+              href="/contact"
+              onClick={() => setIsOpen(false)}
+              className="block text-[15px] font-bold text-deep-brown hover:text-muted-brown transition-colors"
+            >
+              {t('contact')}
+            </Link>
           </div>
         </div>
       )}

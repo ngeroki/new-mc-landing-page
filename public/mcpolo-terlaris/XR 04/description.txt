@@ -1,0 +1,6 @@
+XR 04
+Modal : flat 350/kd
+high 390/kd
+Jual : flat 420/kd
+high 460/kd
+Sol simplek.

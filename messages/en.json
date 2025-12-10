@@ -7,10 +7,10 @@
     "contact": "Contact Us"
   },
   "hero": {
-    "headline": "Local Sandals, Quality for the Entire Archipelago",
-    "subheadline": "New MC is a trusted wholesale sandal supplier for stores throughout Indonesia.",
+    "headline": "New Standard for Premium Store-Class Wholesale Sandals",
+    "subheadline": "High-standard collection with modern design touches, crafted to give a more premium impression to your store display.",
     "whatsapp": "Contact via WhatsApp",
-    "catalog": "View Catalog"
+    "catalog": "Enter Exclusive Catalog"
   },
   "credibility": {
     "title": "Why Choose New MC",
@@ -80,6 +80,26 @@
     "subheadline": "We serve wholesale orders in both large and small scales.",
     "button": "Contact via WhatsApp"
   },
+  "catalog": {
+    "newArrivals": "New Arrivals",
+    "newArrivalsTitle": "Latest Collection",
+    "newArrivalsSubtitle": "Discover our newest sandal designs with modern styles and premium quality",
+    "bestsellers": "Best Sellers",
+    "bestsellersTitle": "Most Popular Products",
+    "bestsellersSubtitle": "Our customers' favorite choices - proven quality and high demand",
+    "products": "products",
+    "noProducts": "No products found",
+    "noProductsDescription": "Try changing your filters or search keywords",
+    "new": "New",
+    "bestseller": "Best Seller",
+    "size": "Size",
+    "packageInfo1": "1 Package = All Sizes",
+    "packageInfo2": "Cannot select individual sizes",
+    "wholesalePrice": "Wholesale Price",
+    "viewDetails": "View Product Details",
+    "loadMore": "Load More",
+    "moreProducts": "more products"
+  },
   "footer": {
     "address": "Jakarta, Indonesia",
     "whatsapp": "WhatsApp",
@@ -87,4 +107,3 @@
     "copyright": "© 2024 New MC. All rights reserved."
   }
 }
-

@@ -31,7 +31,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <WhatsAppButton />
               <Link
-                href={`/${locale}/#catalog`}
+                href="/catalog"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-md bg-deep-brown text-white hover:bg-[#3A2819] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 {t('catalog')}

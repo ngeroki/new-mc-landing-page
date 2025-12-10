@@ -7,10 +7,10 @@
     "contact": "Kontak"
   },
   "hero": {
-    "headline": "Sandal Lokal, Kualitas untuk Seluruh Nusantara",
-    "subheadline": "New MC adalah pemasok grosir sandal terpercaya untuk toko-toko di seluruh Indonesia.",
+    "headline": "Standar Baru Sandal Grosir Kelas Toko Premium",
+    "subheadline": "Koleksi berstandar tinggi dengan sentuhan desain modern, dirancang untuk memberi kesan lebih premium pada etalase toko Anda.",
     "whatsapp": "Hubungi via WhatsApp",
-    "catalog": "Lihat Katalog"
+    "catalog": "Masuk Katalog Eksklusif"
   },
   "credibility": {
     "title": "Mengapa Memilih New MC",
@@ -78,7 +78,28 @@
   "cta": {
     "headline": "Siap Memperluas Koleksi Toko Anda?",
     "subheadline": "Kami melayani pemesanan grosir dalam skala besar maupun kecil.",
-    "button": "Hubungi via WhatsApp"
+    "catalogButton": "Masuk Katalog Eksklusif",
+    "whatsappButton": "Hubungi via WhatsApp"
+  },
+  "catalog": {
+    "newArrivals": "Produk Baru",
+    "newArrivalsTitle": "Koleksi Terbaru",
+    "newArrivalsSubtitle": "Temukan desain sandal terbaru kami dengan gaya modern dan kualitas premium",
+    "bestsellers": "Terlaris",
+    "bestsellersTitle": "Produk Paling Populer",
+    "bestsellersSubtitle": "Pilihan favorit pelanggan kami - kualitas terbukti dan permintaan tinggi",
+    "products": "produk",
+    "noProducts": "Tidak ada produk ditemukan",
+    "noProductsDescription": "Coba ubah filter atau kata kunci pencarian Anda",
+    "new": "Baru",
+    "bestseller": "Terlaris",
+    "size": "Ukuran",
+    "packageInfo1": "1 Paket = Semua Ukuran",
+    "packageInfo2": "Tidak bisa pilih ukuran satuan",
+    "wholesalePrice": "Harga Grosir",
+    "viewDetails": "Lihat Detail Produk",
+    "loadMore": "Muat Lebih Banyak",
+    "moreProducts": "produk lagi"
   },
   "footer": {
     "address": "Jakarta, Indonesia",

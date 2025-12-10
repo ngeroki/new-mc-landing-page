@@ -1,0 +1,6 @@
+SHELLA
+Modal : flat 330/kd
+high 370/kd
+Jual : flat 400/kd
+high 440/kd
+Sol simplek.

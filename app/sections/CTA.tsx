@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import WhatsAppButton from '../components/WhatsAppButton';
+import { Link } from '@/routing';
 
 export default function CTA() {
   const t = useTranslations('cta');
@@ -26,7 +27,13 @@ export default function CTA() {
           <p className="text-lg md:text-xl text-deep-brown/80 max-w-2xl mx-auto">
             {t('subheadline')}
           </p>
-          <div className="pt-6">
+          <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/catalog"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-md bg-deep-brown text-white hover:bg-[#3A2819] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              {t('catalogButton')}
+            </Link>
             <WhatsAppButton />
           </div>
         </motion.div>

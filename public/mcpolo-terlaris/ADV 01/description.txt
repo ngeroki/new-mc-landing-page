@@ -1,0 +1,6 @@
+ADV 01
+Modal : flat 400/kd
+high 440/kd
+Jual : flat 480/kd
+high 520/kd
+Sol simplek.

@@ -12,7 +12,7 @@ export default function CompanyStory() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="about" className="py-24 bg-[#FDFBF7]" ref={ref}>
+    <section id="about" className="py-24 bg-white" ref={ref}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
