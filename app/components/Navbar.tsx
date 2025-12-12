@@ -59,21 +59,41 @@ export default function Navbar() {
                 <div className="py-2">
                   <Link
                     href="/catalog"
+                    className="block px-4 py-2 text-sm text-deep-brown hover:bg-[#FDFBF7] transition-colors font-semibold border-b border-deep-brown/10"
+                  >
+                    📦 Semua Produk
+                  </Link>
+                  <div className="px-4 py-2 text-xs text-deep-brown/50 font-semibold">Kategori</div>
+                  <Link
+                    href="/catalog?category=men"
                     className="block px-4 py-2 text-sm text-deep-brown hover:bg-[#FDFBF7] transition-colors"
                   >
-                    📦 All Products
+                    👞 Sandal Pria
                   </Link>
+                  <Link
+                    href="/catalog?category=women"
+                    className="block px-4 py-2 text-sm text-deep-brown hover:bg-[#FDFBF7] transition-colors"
+                  >
+                    👠 Sandal Wanita
+                  </Link>
+                  <Link
+                    href="/catalog?category=kids"
+                    className="block px-4 py-2 text-sm text-deep-brown hover:bg-[#FDFBF7] transition-colors"
+                  >
+                    👟 Sandal Anak
+                  </Link>
+                  <div className="px-4 py-2 text-xs text-deep-brown/50 font-semibold border-t border-deep-brown/10 mt-1">Koleksi Spesial</div>
                   <Link
                     href="/new-arrivals"
                     className="block px-4 py-2 text-sm text-deep-brown hover:bg-[#FDFBF7] transition-colors"
                   >
-                    ✨ New Arrivals
+                    ✨ Produk Baru
                   </Link>
                   <Link
                     href="/best-sellers"
                     className="block px-4 py-2 text-sm text-deep-brown hover:bg-[#FDFBF7] transition-colors"
                   >
-                    🔥 Best Sellers
+                    🔥 Terlaris
                   </Link>
                 </div>
               </div>
@@ -100,16 +120,26 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Right: Actions (Language Switcher for now) */}
+          {/* Right: Actions (Language Switcher) */}
           <div className="hidden md:flex items-center space-x-6 flex-1 justify-end">
-            {/* Placeholder for Search/Account/Cart icons if needed later */}
             <LanguageSwitcher />
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4 absolute right-6">
-            <LanguageSwitcher />
-            <MobileMenu navLinks={navLinks} t={t} locale={locale} />
+          {/* Mobile: Logo on Left, Language + Menu on Right */}
+          <div className="md:hidden flex items-center justify-between w-full">
+            <Link href="/" className="flex items-center">
+              <div className="relative h-16 w-auto">
+                <img
+                  src="/images/new-mc-logo-v5.png"
+                  alt="New MC Logo"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+            </Link>
+            <div className="flex items-center space-x-3">
+              <LanguageSwitcher />
+              <MobileMenu navLinks={navLinks} t={t} locale={locale} />
+            </div>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/routing';
 import '../globals.css';
 import Navbar from '../components/Navbar';
+import Footer from '../sections/Footer';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -32,9 +33,9 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages} locale={validLocale}>
           <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
-
