@@ -17,13 +17,13 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-24 bg-white" ref={ref}>
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <section className="py-16 md:py-24 bg-white" ref={ref}>
+      <div className="w-full px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl lg:text-5xl font-heading font-semibold text-deep-brown text-center mb-16"
+          className="text-2xl md:text-5xl lg:text-6xl font-heading font-semibold text-deep-brown text-center mb-16"
         >
           {t('title')}
         </motion.h2>

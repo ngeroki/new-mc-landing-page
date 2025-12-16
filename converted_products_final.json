@@ -1,0 +1,1719 @@
+[
+  {
+    "id": "reyna",
+    "name": "Sandal Reyna",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 18000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Reyna dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "la04flat",
+    "name": "Sandal LA 04 Flat",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 20000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal LA 04 Flat dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "sandala05flat",
+    "name": "Sanda LA 05 Flat",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 20000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sanda LA 05 Flat dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "mevia",
+    "name": "Sandal Mevia",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 20000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Mevia dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "shella",
+    "name": "Sandal Shella",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 20000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Shella dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "vita01",
+    "name": "Sandal Vita 01",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 20000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Vita 01 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "alza",
+    "name": "Sandal ALZA",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 21000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal ALZA dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "devia",
+    "name": "Sandal Devia",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 21000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Devia dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "hebby",
+    "name": "Sandal Hebby",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 21000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Hebby dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "nilu",
+    "name": "Sandal Nilu",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 21000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Nilu dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "queena02",
+    "name": "Sandal Queena 02",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 21000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Queena 02 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "xr02",
+    "name": "Sandal XR 02",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 21000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal XR 02 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "xr04",
+    "name": "Sandal XR 04",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 21000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal XR 04 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "yolla",
+    "name": "Sandal Yolla",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 21000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Yolla dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "adv02",
+    "name": "Sandal ADV 02",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal ADV 02 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "dh01",
+    "name": "Sandal DH 01",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 6,
+    "sizeRun": "36-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal DH 01 dengan ukuran 36-41. MOQ 6 Pcs."
+  },
+  {
+    "id": "leytisa",
+    "name": "Sandal Leytisa",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Leytisa dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "lolly",
+    "name": "Sandal Lolly",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Lolly dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "nby01",
+    "name": "Sandal NBY 01",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal NBY 01 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "ovy",
+    "name": "Sandal OVY",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal OVY dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "pl05",
+    "name": "Sandal PL 05",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal PL 05 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "sheira",
+    "name": "Sandal Sheira",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Sheira dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "vatiya",
+    "name": "Sandal Vatiya",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Vatiya dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "vita02",
+    "name": "Sandal Vita 02",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Vita 02 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "zayana",
+    "name": "Sandal Zayana",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 22000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Zayana dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "adv03",
+    "name": "Sandal ADV 03",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal ADV 03 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "arnia",
+    "name": "Sandal ARNIA",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal ARNIA dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "la01flat",
+    "name": "Sandal LA 01 Flat",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal LA 01 Flat dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "la03flat",
+    "name": "Sandal LA 03 Flat",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal LA 03 Flat dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "ulir45",
+    "name": "Sandal Ulir 45",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Ulir 45 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "ulir46",
+    "name": "Sandal Ulir 46",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Ulir 46 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "ulir47",
+    "name": "Sandal Ulir 47",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Ulir 47 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "ulir48",
+    "name": "Sandal Ulir 48",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Ulir 48 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "ulir49",
+    "name": "Sandal Ulir 49",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Ulir 49 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "verin",
+    "name": "Sandal Verin ",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Verin  dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "teplek",
+    "name": "Sandal Teplek",
+    "category": "women",
+    "type": "slipper",
+    "image": "/mcpolo/teplek/teplek-01.jpg",
+    "lifestyleImage": "/mcpolo/teplek/teplek-Lifestyle-01.png",
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Teplek dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "adv01",
+    "name": "Sandal ADV 01",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 24000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal ADV 01 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "mt01",
+    "name": "Sandal MT 01",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 24000,
+    "moq": 6,
+    "sizeRun": "36-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal MT 01 dengan ukuran 36-41. MOQ 6 Pcs."
+  },
+  {
+    "id": "dh02",
+    "name": "Sandal DH 02",
+    "category": "women",
+    "type": "sandal",
+    "image": "/images/placeholder-sandal.jpg",
+    "lifestyleImage": null,
+    "wholesalePrice": 25000,
+    "moq": 6,
+    "sizeRun": "36-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal DH 02 dengan ukuran 36-41. MOQ 6 Pcs."
+  },
+  {
+    "id": "7833",
+    "name": "Sandal 7833",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/7833/7833-01.jpg",
+    "lifestyleImage": "/mcpolo/7833/7833-Lifestyle-01.png",
+    "wholesalePrice": 25000,
+    "moq": 6,
+    "sizeRun": "40-45",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 7833 dengan ukuran 40-45. MOQ 6 Pcs."
+  },
+  {
+    "id": "7835",
+    "name": "Sandal 7835",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/7835/7835-01.jpg",
+    "lifestyleImage": "/mcpolo/7835/7835-Lifestyle-01.png",
+    "wholesalePrice": 25000,
+    "moq": 6,
+    "sizeRun": "40-45",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 7835 dengan ukuran 40-45. MOQ 6 Pcs."
+  },
+  {
+    "id": "8013",
+    "name": "Sandal 8013",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/8013/8013-01.jpg",
+    "lifestyleImage": "/mcpolo/8013/8013-Lifestyle-01.png",
+    "wholesalePrice": 25000,
+    "moq": 6,
+    "sizeRun": "36-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 8013 dengan ukuran 36-41. MOQ 6 Pcs."
+  },
+  {
+    "id": "9013",
+    "name": "Sandal 9013",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/9013/9013-01.jpg",
+    "lifestyleImage": "/mcpolo/9013/9013-Lifestyle-01.png",
+    "wholesalePrice": 25000,
+    "moq": 6,
+    "sizeRun": "40-45",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 9013 dengan ukuran 40-45. MOQ 6 Pcs."
+  },
+  {
+    "id": "9017",
+    "name": "Sandal 9017",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/9017/9017-01.jpg",
+    "lifestyleImage": "/mcpolo/9017/9017-Lifestyle-01.png",
+    "wholesalePrice": 25000,
+    "moq": 6,
+    "sizeRun": "40-45",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 9017 dengan ukuran 40-45. MOQ 6 Pcs."
+  },
+  {
+    "id": "161832k",
+    "name": "Sandal 1618-3-2K",
+    "category": "kids",
+    "type": "sandal",
+    "image": "/mcpolo/1618 - 3-2k/1618 - 3-2k-01.jpg",
+    "lifestyleImage": "/mcpolo/1618 - 3-2k/1618 - 3-2k-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 5,
+    "sizeRun": "30-34",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 1618-3-2K dengan ukuran 30-34. MOQ 5 Pcs."
+  },
+  {
+    "id": "161812l",
+    "name": "Sandal 1618-1-2L",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/1618 -1-2l/1618 -1-2l-01.jpg",
+    "lifestyleImage": "/mcpolo/1618 -1-2l/1618 -1-2l-Lifestyle-01.png",
+    "wholesalePrice": 30000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 1618-1-2L dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "b08138",
+    "name": "Sandal B08-138",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/b08-138/b08-138-01.jpg",
+    "lifestyleImage": "/mcpolo/b08-138/b08-138-Lifestyle-01.png",
+    "wholesalePrice": 33000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal B08-138 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "b083",
+    "name": "Sandal B08-3",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/b08-3/b08-3-01.jpg",
+    "lifestyleImage": "/mcpolo/b08-3/b08-3-Lifestyle-01.png",
+    "wholesalePrice": 31000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal B08-3 dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "bb0828",
+    "name": "Sandal BB08-28",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/bb08-28/bb08-28-01.jpg",
+    "lifestyleImage": "/mcpolo/bb08-28/bb08-28-Lifestyle-01.png",
+    "wholesalePrice": 33000,
+    "moq": 5,
+    "sizeRun": "38-42",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal BB08-28 dengan ukuran 38-42. MOQ 5 Pcs."
+  },
+  {
+    "id": "bb087",
+    "name": "Sandal BB08-7",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/bb08-7/bb08-7-01.jpg",
+    "lifestyleImage": "/mcpolo/bb08-7/bb08-7-Lifestyle-01.png",
+    "wholesalePrice": 33000,
+    "moq": 5,
+    "sizeRun": "38-42",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal BB08-7 dengan ukuran 38-42. MOQ 5 Pcs."
+  },
+  {
+    "id": "bo81",
+    "name": "Sandal BO8-1",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/bo8-1/bo8-1-01.jpg",
+    "lifestyleImage": "/mcpolo/bo8-1/bo8-1-Lifestyle-01.png",
+    "wholesalePrice": 31000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal BO8-1 dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "bo8128",
+    "name": "Sandal BO8-128",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/bo8-128/bo8-128-01.jpg",
+    "lifestyleImage": "/mcpolo/bo8-128/bo8-128-Lifestyle-01.png",
+    "wholesalePrice": 31000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal BO8-128 dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "bo828",
+    "name": "Sandal BO8-28",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/bo8-28/bo8-28-01.jpg",
+    "lifestyleImage": "/mcpolo/bo8-28/bo8-28-Lifestyle-01.png",
+    "wholesalePrice": 33000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal BO8-28 dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "bo83",
+    "name": "Sandal BO8-3",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/bo8-3/bo8-3-01.jpg",
+    "lifestyleImage": "/mcpolo/bo8-3/bo8-3-Lifestyle-01.png",
+    "wholesalePrice": 33000,
+    "moq": 5,
+    "sizeRun": "38-42",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal BO8-3 dengan ukuran 38-42. MOQ 5 Pcs."
+  },
+  {
+    "id": "eryafm540a",
+    "name": "Sandal Erya FM 540-A",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/erya fm 540-a/erya fm 540-a-01.jpg",
+    "lifestyleImage": "/mcpolo/erya fm 540-a/erya fm 540-a-Lifestyle-01.png",
+    "wholesalePrice": 34000,
+    "moq": 6,
+    "sizeRun": "39-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Erya FM 540-A dengan ukuran 39-44. MOQ 6 Pcs."
+  },
+  {
+    "id": "sanur",
+    "name": "Sandal Sanur",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/sanur/sanur-01.jpg",
+    "lifestyleImage": "/mcpolo/sanur/sanur-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Sanur dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "jepitbikro01",
+    "name": "Sandal Jepit Bikro 01",
+    "category": "men",
+    "type": "flipflop",
+    "image": "/mcpolo/bikro 01/bikro 01-01.jpg",
+    "lifestyleImage": "/mcpolo/bikro 01/bikro 01-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 6,
+    "sizeRun": "39-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Jepit Bikro 01 dengan ukuran 39-44. MOQ 6 Pcs."
+  },
+  {
+    "id": "jepitbikro03",
+    "name": "Sandal Jepit Bikro 03",
+    "category": "men",
+    "type": "flipflop",
+    "image": "/mcpolo/bikro 03/bikro 03-01.jpg",
+    "lifestyleImage": "/mcpolo/bikro 03/bikro 03-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 6,
+    "sizeRun": "39-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Jepit Bikro 03 dengan ukuran 39-44. MOQ 6 Pcs."
+  },
+  {
+    "id": "domino",
+    "name": "Sandal Domino",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/domino/domino-01.jpg",
+    "lifestyleImage": "/mcpolo/domino/domino-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Domino dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "99815",
+    "name": "Sandal 998-1-5",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/998-1-5/998-1-5-01.jpg",
+    "lifestyleImage": "/mcpolo/998-1-5/998-1-5-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 998-1-5 dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "998h",
+    "name": "Sandal 998H",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/998h/998h-01.jpg",
+    "lifestyleImage": "/mcpolo/998h/998h-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 6,
+    "sizeRun": "38-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 998H dengan ukuran 38-43. MOQ 6 Pcs."
+  },
+  {
+    "id": "998p",
+    "name": "Sandal 998P",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/998p/998p-01.jpg",
+    "lifestyleImage": "/mcpolo/998p/998p-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 6,
+    "sizeRun": "38-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 998P dengan ukuran 38-43. MOQ 6 Pcs."
+  },
+  {
+    "id": "bb0855",
+    "name": "Sandal BB08-55",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/bb08 - 55/bb08 - 55-01.jpg",
+    "lifestyleImage": "/mcpolo/bb08 - 55/bb08 - 55-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal BB08-55 dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "camos",
+    "name": "Sandal Camos",
+    "category": "men",
+    "type": "casual",
+    "image": "/mcpolo/camos/camos-01.jpg",
+    "lifestyleImage": "/mcpolo/camos/camos-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 6,
+    "sizeRun": "38-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Camos dengan ukuran 38-43. MOQ 6 Pcs."
+  },
+  {
+    "id": "ryuken",
+    "name": "Sandal Ryuken",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/ryuken/ryuken-01.jpg",
+    "lifestyleImage": "/mcpolo/ryuken/ryuken-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 6,
+    "sizeRun": "38-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Ryuken dengan ukuran 38-43. MOQ 6 Pcs."
+  },
+  {
+    "id": "19571",
+    "name": "Sandal 1957-1",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/1957 -1/1957 -1-01.jpg",
+    "lifestyleImage": "/mcpolo/1957 -1/1957 -1-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 1957-1 dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "1988a12",
+    "name": "Sandal 1988A-12",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/1988a-12/1988a-12-01.jpg",
+    "lifestyleImage": "/mcpolo/1988a-12/1988a-12-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 1988A-12 dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "1988a14b",
+    "name": "Sandal 1988A-14B",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/1988a-14b/1988a-14b-01.jpg",
+    "lifestyleImage": "/mcpolo/1988a-14b/1988a-14b-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 1988A-14B dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "1988a16b",
+    "name": "Sandal 1988A-16B",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/1988a-16b/1988a-16b-01.jpg",
+    "lifestyleImage": "/mcpolo/1988a-16b/1988a-16b-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 1988A-16B dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "2125+3",
+    "name": "Sandal 2125+3",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/2125+3/2125+3-01.jpg",
+    "lifestyleImage": "/mcpolo/2125+3/2125+3-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 2125+3 dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "lmx18388",
+    "name": "Sandal LMX-1838-8",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/lmx-1838-8/lmx-1838-8-01.jpg",
+    "lifestyleImage": "/mcpolo/lmx-1838-8/lmx-1838-8-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 6,
+    "sizeRun": "40-45",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal LMX-1838-8 dengan ukuran 40-45. MOQ 6 Pcs."
+  },
+  {
+    "id": "78065l",
+    "name": "Sandal 7806-5L",
+    "category": "kids",
+    "type": "sandal",
+    "image": "/mcpolo/7806 - 5l/7806 - 5l-01.jpg",
+    "lifestyleImage": "/mcpolo/7806 - 5l/7806 - 5l-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 6,
+    "sizeRun": "30-35",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 7806-5L dengan ukuran 30-35. MOQ 6 Pcs."
+  },
+  {
+    "id": "78061l",
+    "name": "Sandal 7806-1L",
+    "category": "kids",
+    "type": "sandal",
+    "image": "/mcpolo/7806-1l/7806-1l-01.jpg",
+    "lifestyleImage": "/mcpolo/7806-1l/7806-1l-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 6,
+    "sizeRun": "30-35",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 7806-1L dengan ukuran 30-35. MOQ 6 Pcs."
+  },
+  {
+    "id": "78062l",
+    "name": "Sandal 7806-2L",
+    "category": "kids",
+    "type": "sandal",
+    "image": "/mcpolo/7806-2l/7806-2l-01.jpg",
+    "lifestyleImage": "/mcpolo/7806-2l/7806-2l-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 6,
+    "sizeRun": "30-35",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 7806-2L dengan ukuran 30-35. MOQ 6 Pcs."
+  },
+  {
+    "id": "780635",
+    "name": "Sandal 7806-35",
+    "category": "kids",
+    "type": "sandal",
+    "image": "/mcpolo/7806-35/7806-35-01.jpg",
+    "lifestyleImage": "/mcpolo/7806-35/7806-35-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 6,
+    "sizeRun": "30-35",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 7806-35 dengan ukuran 30-35. MOQ 6 Pcs."
+  },
+  {
+    "id": "6625a3",
+    "name": "Sandal 6625-A3",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/6625-a3/6625-a3-01.jpg",
+    "lifestyleImage": "/mcpolo/6625-a3/6625-a3-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "37-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 6625-A3 dengan ukuran 37-41. MOQ 5 Pcs."
+  },
+  {
+    "id": "6625c1",
+    "name": "Sandal 6625-C1",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/6625-c1/6625-c1-01.jpg",
+    "lifestyleImage": "/mcpolo/6625-c1/6625-c1-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "37-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 6625-C1 dengan ukuran 37-41. MOQ 5 Pcs."
+  },
+  {
+    "id": "6625d1",
+    "name": "Sandal 6625-D1",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/6625-d1/6625-d1-01.jpg",
+    "lifestyleImage": "/mcpolo/6625-d1/6625-d1-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "37-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 6625-D1 dengan ukuran 37-41. MOQ 5 Pcs."
+  },
+  {
+    "id": "6625d2",
+    "name": "Sandal 6625-D2",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/6625-d2/6625-d2-01.jpg",
+    "lifestyleImage": "/mcpolo/6625-d2/6625-d2-Lifestyle-01.png",
+    "wholesalePrice": 35000,
+    "moq": 5,
+    "sizeRun": "37-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 6625-D2 dengan ukuran 37-41. MOQ 5 Pcs."
+  },
+  {
+    "id": "aw001",
+    "name": "Sandal AW001",
+    "category": "men",
+    "type": "casual",
+    "image": "/mcpolo/aw001/aw001-01.jpg",
+    "lifestyleImage": "/mcpolo/aw001/aw001-Lifestyle-01.png",
+    "wholesalePrice": 40000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal AW001 dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "aw002",
+    "name": "Sandal AW002",
+    "category": "women",
+    "type": "casual",
+    "image": "/mcpolo/aw002/aw002-01.jpg",
+    "lifestyleImage": "/mcpolo/aw002/aw002-Lifestyle-01.png",
+    "wholesalePrice": 40000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal AW002 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "aw003",
+    "name": "Sandal AW003",
+    "category": "women",
+    "type": "casual",
+    "image": "/mcpolo/aw003/aw003-01.jpg",
+    "lifestyleImage": "/mcpolo/aw003/aw003-Lifestyle-01.png",
+    "wholesalePrice": 40000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal AW003 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "dakkarielegan01",
+    "name": "Sandal Dakkari Elegan 01",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/dakkari elegan 01/dakkari elegan 01-01.jpg",
+    "lifestyleImage": "/mcpolo/dakkari elegan 01/dakkari elegan 01-Lifestyle-01.png",
+    "wholesalePrice": 25000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Dakkari Elegan 01 dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "dakkarielegan02",
+    "name": "Sandal Dakkari Elegan 02",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/dakkari elegan 02/dakkari elegan 02-01.jpg",
+    "lifestyleImage": "/mcpolo/dakkari elegan 02/dakkari elegan 02-Lifestyle-01.png",
+    "wholesalePrice": 25000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Dakkari Elegan 02 dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "dakkarielegan03",
+    "name": "Sandal Dakkari Elegan 03",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/dakkari elegan 03/dakkari elegan 03-01.jpg",
+    "lifestyleImage": "/mcpolo/dakkari elegan 03/dakkari elegan 03-Lifestyle-01.png",
+    "wholesalePrice": 25000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Dakkari Elegan 03 dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "998",
+    "name": "Sandal 998",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/998/998-01.jpg",
+    "lifestyleImage": "/mcpolo/998/998-Lifestyle-01.png",
+    "wholesalePrice": 23000,
+    "moq": 5,
+    "sizeRun": "37-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 998 dengan ukuran 37-41. MOQ 5 Pcs."
+  },
+  {
+    "id": "219a",
+    "name": "Sandal 219A",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/219a-man/219a-man-01.jpg",
+    "lifestyleImage": "/mcpolo/219a-man/219a-man-Lifestyle-01.png",
+    "wholesalePrice": 23000,
+    "moq": 6,
+    "sizeRun": "40-45",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 219A dengan ukuran 40-45. MOQ 6 Pcs."
+  },
+  {
+    "id": "eva",
+    "name": "Sandal Eva",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/eva/eva-01.jpg",
+    "lifestyleImage": "/mcpolo/eva/eva-Lifestyle-01.png",
+    "wholesalePrice": 23000,
+    "moq": 6,
+    "sizeRun": "40-45",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal Eva dengan ukuran 40-45. MOQ 6 Pcs."
+  },
+  {
+    "id": "091232",
+    "name": "Sandal 0912-32",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/0912 -32/0912 -32-01.jpg",
+    "lifestyleImage": "/mcpolo/0912 -32/0912 -32-Lifestyle-01.png",
+    "wholesalePrice": 18000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 0912-32 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "8051",
+    "name": "Sandal 805-1",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/805 -1/805 -1-01.jpg",
+    "lifestyleImage": "/mcpolo/805 -1/805 -1-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 805-1 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "806b2",
+    "name": "Sandal 806B-2",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/806b-2/806b-2-01.jpg",
+    "lifestyleImage": "/mcpolo/806b-2/806b-2-Lifestyle-01.png",
+    "wholesalePrice": 25000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 806B-2 dengan ukuran 36-40. MOQ 5 Pcs."
+  },
+  {
+    "id": "8071",
+    "name": "Sandal 807-1",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/807-1/807-1-01.jpg",
+    "lifestyleImage": "/mcpolo/807-1/807-1-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 6,
+    "sizeRun": "36-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 807-1 dengan ukuran 36-41. MOQ 6 Pcs."
+  },
+  {
+    "id": "8072",
+    "name": "Sandal 807-2",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/807-2/807-2-01.jpg",
+    "lifestyleImage": "/mcpolo/807-2/807-2-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 6,
+    "sizeRun": "36-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 807-2 dengan ukuran 36-41. MOQ 6 Pcs."
+  },
+  {
+    "id": "8073",
+    "name": "Sandal 807-3",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/807-3/807-3-01.jpg",
+    "lifestyleImage": "/mcpolo/807-3/807-3-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 6,
+    "sizeRun": "36-41",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 807-3 dengan ukuran 36-41. MOQ 6 Pcs."
+  },
+  {
+    "id": "8312bv",
+    "name": "Sandal 831-2 BV",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/831-2 bv/831-2 bv-01.jpg",
+    "lifestyleImage": "/mcpolo/831-2 bv/831-2 bv-Lifestyle-01.png",
+    "wholesalePrice": 28000,
+    "moq": 5,
+    "sizeRun": "40-44",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal 831-2 BV dengan ukuran 40-44. MOQ 5 Pcs."
+  },
+  {
+    "id": "ys13",
+    "name": "Sandal YS 13",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/ys 13/ys 13-01.jpg",
+    "lifestyleImage": "/mcpolo/ys 13/ys 13-Lifestyle-01.png",
+    "wholesalePrice": 40000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal YS 13 dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "ys16",
+    "name": "Sandal YS 16",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/ys 16/ys 16-01.jpg",
+    "lifestyleImage": "/mcpolo/ys 16/ys 16-Lifestyle-01.png",
+    "wholesalePrice": 40000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal YS 16 dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "ys17",
+    "name": "Sandal YS 17",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/ys 17/ys 17-01.jpg",
+    "lifestyleImage": "/mcpolo/ys 17/ys 17-Lifestyle-01.png",
+    "wholesalePrice": 40000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal YS 17 dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "ys18",
+    "name": "Sandal YS 18",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/ys 18/ys 18-01.jpg",
+    "lifestyleImage": "/mcpolo/ys 18/ys 18-Lifestyle-01.png",
+    "wholesalePrice": 40000,
+    "moq": 2,
+    "sizeRun": "39-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal YS 18 dengan ukuran 39-40. MOQ 2 Pcs."
+  },
+  {
+    "id": "ys20",
+    "name": "Sandal YS 20",
+    "category": "men",
+    "type": "sandal",
+    "image": "/mcpolo/ys 20/ys 20-01.jpg",
+    "lifestyleImage": "/mcpolo/ys 20/ys 20-Lifestyle-01.png",
+    "wholesalePrice": 40000,
+    "moq": 5,
+    "sizeRun": "39-43",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal YS 20 dengan ukuran 39-43. MOQ 5 Pcs."
+  },
+  {
+    "id": "ys214",
+    "name": "Sandal YS 21-4",
+    "category": "women",
+    "type": "sandal",
+    "image": "/mcpolo/ys 21 -4/ys 21 -4-01.jpg",
+    "lifestyleImage": "/mcpolo/ys 21 -4/ys 21 -4-Lifestyle-01.png",
+    "wholesalePrice": 40000,
+    "moq": 5,
+    "sizeRun": "36-40",
+    "highlights": [
+      "Kualitas Premium",
+      "Cocok untuk Toko Daerah",
+      "Stok Stabil"
+    ],
+    "description": "Sandal YS 21-4 dengan ukuran 36-40. MOQ 5 Pcs."
+  }
+]

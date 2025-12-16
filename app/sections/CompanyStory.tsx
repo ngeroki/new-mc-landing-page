@@ -12,8 +12,8 @@ export default function CompanyStory() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="about" className="py-24 bg-white" ref={ref}>
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <section id="about" className="py-16 md:py-24 bg-white" ref={ref}>
+      <div className="w-full px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
           <motion.div
@@ -37,7 +37,7 @@ export default function CompanyStory() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-semibold text-deep-brown">
+            <h2 className="text-2xl md:text-5xl lg:text-6xl font-heading font-semibold text-deep-brown">
               {t('title')}
             </h2>
             <div className="w-20 h-1 bg-warm-sand"></div>

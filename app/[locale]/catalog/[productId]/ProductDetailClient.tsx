@@ -7,34 +7,49 @@ import Image from 'next/image';
 import { Link } from '@/routing';
 import WhatsAppButton from '@/app/components/WhatsAppButton';
 import { products } from '@/app/data/products';
+import ProductCard from '@/app/components/ProductCard';
 
 export default function ProductDetailClient({ productId }: { productId: string }) {
-    const t = useTranslations();
+    const t = useTranslations('catalog');
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-    // Find the product
-    const product = products.find((p) => p.id === productId);
+    // Find the product with fallback logic
+    let product = products.find((p) => p.id === productId);
+
+    // Fallback: Check if ID needs decoding
+    if (!product) {
+        const decodedId = decodeURIComponent(productId);
+        product = products.find((p) => p.id === decodedId);
+    }
+
+    // Fallback: Check if searching by Name (slugified/or direct match)
+    if (!product) {
+        product = products.find(p => p.name.toLowerCase().replace(/\s+/g, '-') === productId.toLowerCase());
+    }
 
     // Get related products (same category, different product)
     const relatedProducts = products
-        .filter((p) => p.category === product?.category && p.id !== productId)
+        .filter((p) => product && p.category === product.category && p.id !== product.id)
         .slice(0, 3);
 
     const [selectedImage, setSelectedImage] = useState<'product' | 'lifestyle'>('product');
 
     if (!product) {
         return (
-            <main className="min-h-screen bg-white pt-20 flex items-center justify-center">
-                <div className="text-center">
+            <main className="min-h-screen bg-white flex items-center justify-center">
+                <div className="text-center p-8">
                     <h1 className="text-3xl font-heading font-semibold text-deep-brown mb-4">
-                        Produk Tidak Ditemukan
+                        {t('productNotFound')}
                     </h1>
+                    <p className="text-red-500 mb-6 font-mono bg-red-50 p-2 rounded">
+                        Debug ID: {productId} | Loaded: {products.length}
+                    </p>
                     <Link
                         href="/catalog"
-                        className="text-warm-sand hover:underline"
+                        className="inline-block px-8 py-3 bg-deep-brown text-white font-semibold rounded-md hover:bg-[#3A2819] transition-colors"
                     >
-                        Kembali ke Katalog
+                        {t('backToCatalog')}
                     </Link>
                 </div>
             </main>
@@ -42,14 +57,14 @@ export default function ProductDetailClient({ productId }: { productId: string }
     }
 
     return (
-        <main className="min-h-screen bg-white pt-20">
+        <main className="min-h-screen bg-white">
             {/* Breadcrumb */}
             <section className="bg-[#FDFBF7] py-4">
                 <div className="max-w-7xl mx-auto px-6 md:px-12">
                     <div className="flex items-center gap-2 text-sm text-deep-brown/60">
-                        <Link href="/" className="hover:text-deep-brown">Beranda</Link>
+                        <Link href="/" className="hover:text-deep-brown">{t('home')}</Link>
                         <span>/</span>
-                        <Link href="/catalog" className="hover:text-deep-brown">Katalog</Link>
+                        <Link href="/catalog" className="hover:text-deep-brown">{t('backToCatalog').replace('← ', '')}</Link>
                         <span>/</span>
                         <span className="text-deep-brown font-medium">{product.name}</span>
                     </div>
@@ -80,12 +95,12 @@ export default function ProductDetailClient({ productId }: { productId: string }
                                 <div className="absolute top-4 left-4 flex flex-col gap-2">
                                     {product.isBestseller && (
                                         <span className="px-3 py-1 bg-warm-sand text-white text-xs font-semibold rounded-full">
-                                            Terlaris
+                                            {t('bestseller')}
                                         </span>
                                     )}
                                     {product.isNew && (
                                         <span className="px-3 py-1 bg-deep-brown text-white text-xs font-semibold rounded-full">
-                                            Baru
+                                            {t('new')}
                                         </span>
                                     )}
                                 </div>
@@ -105,7 +120,7 @@ export default function ProductDetailClient({ productId }: { productId: string }
                                         className="object-contain p-4"
                                     />
                                     <div className="absolute bottom-2 left-0 right-0 text-center">
-                                        <span className="text-xs bg-white/90 px-2 py-1 rounded">Produk</span>
+                                        <span className="text-xs bg-white/90 px-2 py-1 rounded">{t('productLabel')}</span>
                                     </div>
                                 </button>
                                 <button
@@ -124,13 +139,13 @@ export default function ProductDetailClient({ productId }: { productId: string }
                                         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#FDFBF7] to-[#FEF1DE]">
                                             <div className="text-center p-4">
                                                 <div className="text-4xl mb-2">📸</div>
-                                                <p className="text-xs text-deep-brown/60">Lifestyle Photo</p>
-                                                <p className="text-xs text-deep-brown/40 mt-1">Coming Soon</p>
+                                                <p className="text-xs text-deep-brown/60">{t('lifestyleLabel')}</p>
+                                                <p className="text-xs text-deep-brown/40 mt-1">{t('lifestyleComingSoon')}</p>
                                             </div>
                                         </div>
                                     )}
                                     <div className="absolute bottom-2 left-0 right-0 text-center">
-                                        <span className="text-xs bg-white/90 px-2 py-1 rounded">Lifestyle</span>
+                                        <span className="text-xs bg-white/90 px-2 py-1 rounded">{t('lifestyleLabel')}</span>
                                     </div>
                                 </button>
                             </div>
@@ -148,12 +163,12 @@ export default function ProductDetailClient({ productId }: { productId: string }
                                 <h1 className="text-3xl md:text-4xl font-heading font-semibold text-deep-brown mb-2">
                                     {product.name}
                                 </h1>
-                                <p className="text-deep-brown/60">Kode: {product.id.toUpperCase()}</p>
+                                <p className="text-deep-brown/60">{t('productCode')}: {product.id.toUpperCase()}</p>
                             </div>
 
                             {/* Price */}
                             <div className="bg-[#FEF1DE] p-6 rounded-lg">
-                                <p className="text-sm text-deep-brown/70 mb-2">Harga Grosir (per pcs):</p>
+                                <p className="text-sm text-deep-brown/70 mb-2">{t('wholesalePriceLabel')}:</p>
                                 <p className="text-4xl font-bold text-deep-brown">
                                     Rp{product.wholesalePrice.toLocaleString('id-ID')}
                                 </p>
@@ -162,29 +177,29 @@ export default function ProductDetailClient({ productId }: { productId: string }
                             {/* Wholesale Info */}
                             <div className="space-y-4 border-t border-b border-deep-brown/10 py-6">
                                 <h3 className="font-heading font-semibold text-deep-brown text-lg">
-                                    Informasi Grosir
+                                    {t('wholesaleInfo')}
                                 </h3>
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="bg-white border border-deep-brown/10 p-4 rounded-lg">
-                                        <p className="text-xs text-deep-brown/60 mb-1">Minimum Order</p>
+                                        <p className="text-xs text-deep-brown/60 mb-1">{t('minimumOrder')}</p>
                                         <p className="text-xl font-bold text-deep-brown">{product.moq} Pcs</p>
                                     </div>
                                     <div className="bg-white border border-deep-brown/10 p-4 rounded-lg">
-                                        <p className="text-xs text-deep-brown/60 mb-1">Ukuran Paket</p>
+                                        <p className="text-xs text-deep-brown/60 mb-1">{t('sizeRange')}</p>
                                         <p className="text-xl font-bold text-deep-brown">{product.sizeRun}</p>
                                     </div>
                                 </div>
                                 <div className="bg-[#FDFBF7] p-4 rounded-lg space-y-2 text-sm text-deep-brown/70">
-                                    <p>✓ 1 Paket berisi semua ukuran dalam range</p>
-                                    <p>✓ Tidak bisa pilih ukuran satuan</p>
-                                    <p>✓ Harga sudah termasuk semua ukuran</p>
+                                    <p>✓ {t('packageNote1')}</p>
+                                    <p>✓ {t('packageNote2')}</p>
+                                    <p>✓ {t('packageNote3')}</p>
                                 </div>
                             </div>
 
                             {/* Description */}
                             <div>
                                 <h3 className="font-heading font-semibold text-deep-brown text-lg mb-3">
-                                    Deskripsi Produk
+                                    {t('productDescription')}
                                 </h3>
                                 <p className="text-deep-brown/70 leading-relaxed">
                                     {product.description}
@@ -194,13 +209,13 @@ export default function ProductDetailClient({ productId }: { productId: string }
                             {/* Product Advantages */}
                             <div>
                                 <h3 className="font-heading font-semibold text-deep-brown text-lg mb-3">
-                                    Keunggulan Produk
+                                    {t('productAdvantages')}
                                 </h3>
                                 <div className="space-y-3">
                                     {product.highlights.map((highlight, index) => (
                                         <div key={index} className="flex items-start gap-3">
                                             <span className="text-warm-sand text-xl">✓</span>
-                                            <span className="text-deep-brown/70">{highlight}</span>
+                                            <span className="text-deep-brown/70">{t(highlight)}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -213,7 +228,7 @@ export default function ProductDetailClient({ productId }: { productId: string }
                                     href="/catalog"
                                     className="block text-center mt-4 text-warm-sand hover:underline"
                                 >
-                                    ← Kembali ke Katalog
+                                    ← {t('backToCatalog')}
                                 </Link>
                             </div>
                         </motion.div>
@@ -226,32 +241,11 @@ export default function ProductDetailClient({ productId }: { productId: string }
                 <section className="py-12 bg-[#FDFBF7]">
                     <div className="max-w-7xl mx-auto px-6 md:px-12">
                         <h2 className="text-2xl md:text-3xl font-heading font-semibold text-deep-brown mb-8 text-center">
-                            Produk Terkait
+                            {t('relatedProducts')}
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {relatedProducts.map((relatedProduct) => (
-                                <Link
-                                    key={relatedProduct.id}
-                                    href={`/catalog/${relatedProduct.id}`}
-                                    className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
-                                >
-                                    <div className="relative aspect-square bg-[#FDFBF7] overflow-hidden">
-                                        <Image
-                                            src={relatedProduct.image}
-                                            alt={relatedProduct.name}
-                                            fill
-                                            className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
-                                        />
-                                    </div>
-                                    <div className="p-4">
-                                        <h3 className="font-heading font-semibold text-deep-brown mb-2">
-                                            {relatedProduct.name}
-                                        </h3>
-                                        <p className="text-lg font-bold text-warm-sand">
-                                            Rp{relatedProduct.wholesalePrice.toLocaleString('id-ID')} / pcs
-                                        </p>
-                                    </div>
-                                </Link>
+                                <ProductCard key={relatedProduct.id} product={relatedProduct} />
                             ))}
                         </div>
                     </div>

@@ -5,138 +5,153 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { Link } from '@/routing';
 
 export default function AboutPage() {
     const t = useTranslations('story');
-    const credibilityT = useTranslations('credibility');
+    const tNav = useTranslations('nav');
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: '-100px' });
+    const timelineRef = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: '-50px' });
+    const isTimelineInView = useInView(timelineRef, { once: true, margin: '-50px' });
 
     const values = [
         {
-            title: 'Kualitas Terjamin',
-            description: 'Setiap produk melalui kontrol kualitas ketat untuk memastikan standar tinggi yang konsisten.',
-            icon: (
-                <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            ),
+            titleKey: 'value1Title',
+            descKey: 'value1Desc',
+            icon: '✓',
         },
         {
-            title: 'Kepercayaan Mitra',
-            description: 'Ratusan mitra bisnis di seluruh Indonesia mempercayakan kebutuhan sandal mereka kepada kami.',
-            icon: (
-                <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-            ),
+            titleKey: 'value2Title',
+            descKey: 'value2Desc',
+            icon: '👥',
         },
         {
-            title: 'Inovasi Berkelanjutan',
-            description: 'Kami terus berinovasi untuk menghadirkan produk yang sesuai dengan kebutuhan pasar.',
-            icon: (
-                <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-            ),
+            titleKey: 'value3Title',
+            descKey: 'value3Desc',
+            icon: '⚡',
         },
+    ];
+
+    const stats = [
+        { value: '20+', labelKey: 'stat1' },
+        { value: '500+', labelKey: 'stat2' },
+        { value: '100K+', labelKey: 'stat3' },
     ];
 
     const milestones = [
-        { year: '2004', title: 'Pendirian', description: 'New MC didirikan dengan visi menjadi pemasok sandal terpercaya' },
-        { year: '2010', title: 'Ekspansi', description: 'Memperluas jaringan distribusi ke seluruh provinsi di Indonesia' },
-        { year: '2015', title: 'Pertumbuhan', description: 'Mencapai 500+ mitra bisnis aktif di seluruh Nusantara' },
-        { year: '2024', title: 'Masa Kini', description: 'Terus berkembang dengan komitmen kualitas dan pelayanan terbaik' },
+        { year: '2004', titleKey: 'milestone1Title', descKey: 'milestone1Desc' },
+        { year: '2010', titleKey: 'milestone2Title', descKey: 'milestone2Desc' },
+        { year: '2015', titleKey: 'milestone3Title', descKey: 'milestone3Desc' },
+        { year: '2025', titleKey: 'milestone4Title', descKey: 'milestone4Desc' },
     ];
 
     return (
-        <main className="min-h-screen pt-24">
-            {/* Hero Section */}
-            <section className="py-16 bg-[#FDFBF7]">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <main className="min-h-screen bg-white">
+
+            {/* Hero Section - Compact */}
+            <section className="bg-gradient-to-b from-[#FDFBF7] to-white py-12 md:py-20">
+                <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-center"
                     >
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold text-deep-brown mb-4">
+                        <h1 className="text-2xl md:text-5xl lg:text-6xl font-heading font-semibold text-deep-brown mb-4">
                             {t('title')}
                         </h1>
-                        <p className="text-lg text-deep-brown/70 max-w-2xl mx-auto">
-                            Perjalanan kami menjadi pemasok grosir sandal terpercaya di Indonesia
+                        <p className="text-base md:text-lg text-deep-brown/60 max-w-2xl mx-auto">
+                            {t('subtitle')}
                         </p>
                     </motion.div>
                 </div>
             </section>
 
-            {/* Story Section */}
-            <section className="py-16 bg-white">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
-                    <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Stats Bar */}
+            <section className="py-8 bg-[#F5E6CC]">
+                <div className="max-w-5xl mx-auto px-6 md:px-12">
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                        {stats.map((stat, index) => (
+                            <motion.div
+                                key={stat.labelKey}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: index * 0.1 }}
+                            >
+                                <div className="text-2xl md:text-4xl font-bold text-deep-brown">{stat.value}</div>
+                                <div className="text-xs md:text-sm text-deep-brown/60">{t(stat.labelKey)}</div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Story Section - Clean Layout */}
+            <section className="py-12 md:py-20">
+                <div className="max-w-5xl mx-auto px-6 md:px-12">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                        {/* Image */}
                         <motion.div
-                            initial={{ opacity: 0, x: -30 }}
-                            animate={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-xl"
+                            viewport={{ once: true }}
+                            className="order-2 md:order-1"
                         >
-                            <Image
-                                src="/images/company-story.jpg"
-                                alt="New MC Warehouse"
-                                fill
-                                className="object-cover"
-                            />
+                            <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+                                <Image
+                                    src="/images/company-story.jpg"
+                                    alt="New MC Story"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         </motion.div>
 
+                        {/* Content */}
                         <motion.div
-                            initial={{ opacity: 0, x: 30 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            className="space-y-6"
+                            initial={{ opacity: 0, x: 20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                            className="order-1 md:order-2"
                         >
-                            <div>
-                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-semibold text-deep-brown mb-4">
-                                    Cerita Kami
-                                </h2>
-                                <div className="w-20 h-1 bg-warm-sand mb-6"></div>
-                            </div>
-                            <p className="text-lg text-deep-brown/80 leading-relaxed">
+                            <h2 className="text-2xl md:text-3xl font-heading font-semibold text-deep-brown mb-4">
+                                {t('storyTitle')}
+                            </h2>
+                            <p className="text-sm md:text-base text-deep-brown/70 leading-relaxed mb-4">
                                 {t('content')}
+                            </p>
+                            <p className="text-sm md:text-base text-deep-brown/70 leading-relaxed">
+                                {t('storyText2')}
                             </p>
                         </motion.div>
                     </div>
                 </div>
             </section>
 
-            {/* Values Section */}
-            <section className="py-16 bg-[#FEF1DE]" ref={ref}>
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={isInView ? { opacity: 1, y: 0 } : {}}
-                        transition={{ duration: 0.6 }}
-                        className="text-3xl md:text-4xl lg:text-5xl font-heading font-semibold text-deep-brown text-center mb-16"
-                    >
-                        Nilai-Nilai Kami
-                    </motion.h2>
+            {/* Values Section - Horizontal Cards */}
+            <section className="py-12 md:py-20 bg-[#FDFBF7]" ref={ref}>
+                <div className="max-w-5xl mx-auto px-6 md:px-12">
+                    <h2 className="text-2xl md:text-3xl font-heading font-semibold text-deep-brown text-center mb-8">
+                        {t('valuesTitle')}
+                    </h2>
 
-                    <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+                    <div className="grid md:grid-cols-3 gap-4 md:gap-6">
                         {values.map((value, index) => (
                             <motion.div
-                                key={value.title}
-                                initial={{ opacity: 0, y: 30 }}
+                                key={value.titleKey}
+                                initial={{ opacity: 0, y: 20 }}
                                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center"
+                                transition={{ duration: 0.4, delay: index * 0.1 }}
+                                className="bg-white p-6 rounded-lg shadow-sm border border-deep-brown/5"
                             >
-                                <div className="text-warm-sand mb-6 flex justify-center">
-                                    {value.icon}
-                                </div>
-                                <h3 className="text-xl md:text-2xl font-heading font-semibold text-deep-brown mb-4">
-                                    {value.title}
+                                <div className="text-2xl mb-3">{value.icon}</div>
+                                <h3 className="text-lg font-heading font-semibold text-deep-brown mb-2">
+                                    {t(value.titleKey)}
                                 </h3>
-                                <p className="text-base text-deep-brown/70 leading-relaxed">
-                                    {value.description}
+                                <p className="text-sm text-deep-brown/60 leading-relaxed">
+                                    {t(value.descKey)}
                                 </p>
                             </motion.div>
                         ))}
@@ -144,39 +159,64 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Timeline Section */}
-            <section className="py-16 bg-white">
-                <div className="max-w-4xl mx-auto px-6 md:px-12">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-semibold text-deep-brown text-center mb-16">
-                        Perjalanan Kami
+            {/* Simple Timeline - Clean Vertical Design */}
+            <section className="py-12 md:py-20 bg-white" ref={timelineRef}>
+                <div className="max-w-3xl mx-auto px-6 md:px-12">
+                    <h2 className="text-2xl md:text-3xl font-heading font-semibold text-deep-brown text-center mb-8 md:mb-12">
+                        {t('journeyTitle')}
                     </h2>
 
-                    <div className="space-y-12">
-                        {milestones.map((milestone, index) => (
-                            <motion.div
-                                key={milestone.year}
-                                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.6, delay: index * 0.2 }}
-                                className="flex items-start gap-6"
-                            >
-                                <div className="flex-shrink-0 w-24 text-right">
-                                    <span className="text-3xl font-heading font-bold text-warm-sand">
-                                        {milestone.year}
-                                    </span>
-                                </div>
-                                <div className="flex-shrink-0 w-4 h-4 bg-warm-sand rounded-full mt-2"></div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-heading font-semibold text-deep-brown mb-2">
-                                        {milestone.title}
-                                    </h3>
-                                    <p className="text-lg text-deep-brown/70">
-                                        {milestone.description}
-                                    </p>
-                                </div>
-                            </motion.div>
-                        ))}
+                    <div className="relative">
+                        {/* Vertical Line */}
+                        <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-deep-brown/10 transform md:-translate-x-1/2"></div>
+
+                        <div className="space-y-8">
+                            {milestones.map((milestone, index) => (
+                                <motion.div
+                                    key={milestone.year}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    animate={isTimelineInView ? { opacity: 1, y: 0 } : {}}
+                                    transition={{ duration: 0.5, delay: index * 0.15 }}
+                                    className={`relative flex items-start gap-6 md:gap-0 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
+                                >
+                                    {/* Dot */}
+                                    <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-warm-sand rounded-full transform -translate-x-1/2 mt-1.5 z-10 ring-4 ring-white"></div>
+
+                                    {/* Content */}
+                                    <div className={`ml-10 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12 md:text-left'}`}>
+                                        <div className="bg-[#FDFBF7] p-4 rounded-lg">
+                                            <span className="text-lg md:text-xl font-bold text-warm-sand">{milestone.year}</span>
+                                            <h3 className="text-base md:text-lg font-heading font-semibold text-deep-brown mt-1">
+                                                {t(milestone.titleKey)}
+                                            </h3>
+                                            <p className="text-sm text-deep-brown/60 mt-1">
+                                                {t(milestone.descKey)}
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    {/* Spacer for desktop layout */}
+                                    <div className="hidden md:block md:w-1/2"></div>
+                                </motion.div>
+                            ))}
+                        </div>
                     </div>
+                </div>
+            </section>
+
+            {/* CTA Section - Compact */}
+            <section className="py-12 md:py-16 bg-deep-brown text-white text-center">
+                <div className="max-w-3xl mx-auto px-6">
+                    <h2 className="text-xl md:text-3xl font-heading font-semibold mb-4">{t('ctaTitle')}</h2>
+                    <p className="text-sm md:text-base text-white/70 mb-6 max-w-xl mx-auto">
+                        {t('ctaSubtitle')}
+                    </p>
+                    <Link
+                        href="/contact"
+                        className="inline-block px-8 py-3 bg-white text-deep-brown font-semibold rounded-full hover:bg-warm-sand hover:text-white transition-all duration-300"
+                    >
+                        {tNav('contact')}
+                    </Link>
                 </div>
             </section>
         </main>

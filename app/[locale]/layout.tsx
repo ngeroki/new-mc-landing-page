@@ -1,8 +1,22 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/routing';
+import { Bodoni_Moda, Inter } from 'next/font/google';
 import '../globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../sections/Footer';
+import BackToTop from '../components/BackToTop';
+
+const bodoniModa = Bodoni_Moda({
+  subsets: ['latin'],
+  variable: '--heading-font',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--body-font',
+  display: 'swap',
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -29,11 +43,16 @@ export default async function LocaleLayout({
 
   return (
     <html lang={validLocale} suppressHydrationWarning>
-      <body>
+      <body className={`min-h-screen ${bodoniModa.variable} ${inter.variable} font-body antialiased`}>
         <NextIntlClientProvider messages={messages} locale={validLocale}>
-          <Navbar />
-          {children}
+          <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 9999 }}>
+            <Navbar />
+          </div>
+          <main style={{ paddingTop: '128px' }}>
+            {children}
+          </main>
           <Footer />
+          <BackToTop />
         </NextIntlClientProvider>
       </body>
     </html>

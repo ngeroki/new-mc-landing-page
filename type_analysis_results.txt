@@ -1,0 +1,12 @@
+Products needing type change:
+
+SEPATU -> casual: 0
+
+SANDAL -> sandal: 7
+  Sandal Teplek: slipper -> sandal
+  Sandal Jepit Bikro 01: flipflop -> sandal
+  Sandal Jepit Bikro 03: flipflop -> sandal
+  Sandal Camos: casual -> sandal
+  Sandal AW001: casual -> sandal
+  Sandal AW002: casual -> sandal
+  Sandal AW003: casual -> sandal

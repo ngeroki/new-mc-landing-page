@@ -4,13 +4,21 @@
     "about": "About Us",
     "catalog": "Catalog",
     "advantages": "Advantages",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "allProducts": "All Products",
+    "categories": "Categories",
+    "menSandals": "Men's Sandals",
+    "womenSandals": "Women's Sandals",
+    "kidsSandals": "Kids' Sandals",
+    "specialCollections": "Special Collections",
+    "newArrivals": "New Arrivals",
+    "bestSellers": "Best Sellers"
   },
   "hero": {
-    "headline": "New Standard for Premium Store-Class Wholesale Sandals",
+    "headline": "Wholesale Price. Premium Look.",
     "subheadline": "High-standard collection with modern design touches, crafted to give a more premium impression to your store display.",
-    "whatsapp": "Contact via WhatsApp",
-    "catalog": "Enter Exclusive Catalog"
+    "whatsapp": "WhatsApp",
+    "catalog": "View Catalog"
   },
   "credibility": {
     "title": "Why Choose New MC",
@@ -29,11 +37,38 @@
   },
   "story": {
     "title": "About New MC",
-    "content": "New MC has been established for many years as a trusted wholesale sandal supplier in Indonesia. We focus on wholesale business and serve store owners in various provinces throughout the archipelago. With a commitment to stable and reliable product quality, we have built trust from hundreds of business partners who entrust their sandal needs to us."
+    "subtitle": "Dedicated to quality and trust since 2004. Trusted partner for sandal stores across Indonesia.",
+    "storyTitle": "Our Story",
+    "content": "New MC has been established for many years as a trusted wholesale sandal supplier in Indonesia. We focus on wholesale business and serve store owners in various provinces throughout the archipelago. With a commitment to stable and reliable product quality, we have built trust from hundreds of business partners who entrust their sandal needs to us.",
+    "storyText2": "We believe that our partners' success is our success. That's why we don't just sell products, but build long-term mutually beneficial relationships.",
+    "valuesTitle": "Our Core Values",
+    "value1Title": "Guaranteed Quality",
+    "value1Desc": "Every product goes through strict quality control to ensure consistently high standards.",
+    "value2Title": "Partner Trust",
+    "value2Desc": "Hundreds of business partners across Indonesia trust us with their sandal needs.",
+    "value3Title": "Continuous Innovation",
+    "value3Desc": "We continuously innovate to deliver products that meet market needs.",
+    "stat1": "Years Experience",
+    "stat2": "Business Partners",
+    "stat3": "Products/Month",
+    "journeyTitle": "Our Journey",
+    "milestone1Title": "Foundation",
+    "milestone1Desc": "New MC was founded with a vision to become a trusted sandal supplier",
+    "milestone2Title": "Expansion",
+    "milestone2Desc": "Expanding distribution network to all provinces",
+    "milestone3Title": "Growth",
+    "milestone3Desc": "Reaching 500+ active business partners",
+    "milestone4Title": "Present",
+    "milestone4Desc": "Continuing to grow with commitment to the best quality",
+    "ctaTitle": "Ready to Become Our Partner?",
+    "ctaSubtitle": "Get the best offers for your wholesale sandal needs."
   },
   "products": {
     "title": "Our Product Range",
     "subtitle": "Complete collection of sandals for various needs",
+    "bestsellers": "Best Sellers",
+    "newArrivals": "New Arrivals",
+    "noProducts": "No Items Found",
     "men": {
       "title": "Men's Sandals",
       "description": "Collection of men's sandals with various models and sizes for your wholesale needs."
@@ -58,7 +93,8 @@
       "title": "Casual Sandals",
       "description": "Casual sandals with trendy designs for various occasions."
     },
-    "viewCatalog": "View Full Catalog"
+    "viewCatalog": "View Full Catalog",
+    "viewAll": "View All"
   },
   "testimonials": {
     "title": "What Our Partners Say",
@@ -81,6 +117,7 @@
     "button": "Contact via WhatsApp"
   },
   "catalog": {
+    "all": "All",
     "newArrivals": "New Arrivals",
     "newArrivalsTitle": "Latest Collection",
     "newArrivalsSubtitle": "Discover our newest sandal designs with modern styles and premium quality",
@@ -98,12 +135,73 @@
     "wholesalePrice": "Wholesale Price",
     "viewDetails": "View Product Details",
     "loadMore": "Load More",
-    "moreProducts": "more products"
+    "moreProducts": "more products",
+    "allCategories": "All Categories",
+    "men": "Men",
+    "women": "Women",
+    "kids": "Kids",
+    "allTypes": "All Types",
+    "sandal": "Sandal",
+    "sepatu": "Shoes",
+    "sortBestseller": "Best Sellers",
+    "sortCheapest": "Cheapest",
+    "sortNewest": "Newest",
+    "sortNameAsc": "Name A-Z",
+    "sortNameDesc": "Name Z-A",
+    "sortDefault": "Sort By",
+    "searchPlaceholder": "Search sandal model…",
+    "catalogTitle": "New MC Product Catalog",
+    "catalogSubtitle": "Premium quality wholesale sandals for your store",
+    "productNotFound": "Product Not Found",
+    "backToCatalog": "Back to Catalog",
+    "home": "Home",
+    "productCode": "Code",
+    "wholesalePriceLabel": "Wholesale Price (per pc)",
+    "wholesaleInfo": "Wholesale Information",
+    "minimumOrder": "Minimum Order",
+    "sizeRange": "Size Range",
+    "packageNote1": "1 Package contains all sizes in range",
+    "packageNote2": "Cannot select individual sizes",
+    "packageNote3": "Price includes all sizes",
+    "productDescription": "Product Description",
+    "productAdvantages": "Product Advantages",
+    "relatedProducts": "Related Products",
+    "productLabel": "Product",
+    "lifestyleLabel": "Lifestyle",
+    "lifestyleComingSoon": "Coming Soon",
+    "highlight_premium": "Premium Quality",
+    "highlight_regional": "Suitable for Regional Stores",
+    "highlight_stock": "Stable Stock",
+    "highlight_durable": "Durable Material",
+    "highlight_comfortable": "Comfortable Design",
+    "highlight_trendy": "Trendy Design",
+    "highlight_lightweight": "Lightweight",
+    "highlight_waterproof": "Waterproof",
+    "highlight_antislip": "Anti-slip Sole"
   },
   "footer": {
-    "address": "PGS Ground Floor No 41-42, Pasar Kebon Kembang Bogor",
+    "address": "Blok B. Lt. Dasar. No. 60-62, P.S Kebon Kembang - Bogor",
     "whatsapp": "WhatsApp",
     "email": "Email",
-    "copyright": "© 2024 New MC. All rights reserved."
+    "copyright": "© 2025 New MC. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're ready to help with your wholesale sandal needs",
+    "infoTitle": "Contact Information",
+    "addressLabel": "Address",
+    "hoursLabel": "Business Hours",
+    "hoursText": "Monday - Saturday: 08:00 - 17:00 WIB",
+    "hoursClosed": "Sunday: Closed",
+    "formTitle": "Send Message",
+    "nameLabel": "Full Name *",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "name@email.com",
+    "phoneLabel": "Phone Number *",
+    "phonePlaceholder": "08xxxxxxxxxx",
+    "messageLabel": "Message *",
+    "messagePlaceholder": "Write your message here...",
+    "submitButton": "Send via WhatsApp"
   }
 }

@@ -25,7 +25,7 @@ export default function Footer() {
         backgroundSize: 'cover'
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="w-full px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo */}
           <div className="md:col-span-2">

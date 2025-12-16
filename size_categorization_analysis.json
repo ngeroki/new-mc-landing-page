@@ -1,0 +1,57 @@
+{
+  "analysis": {
+    "30-34": {
+      "category": "kids",
+      "count": 1
+    },
+    "30-35": {
+      "category": "kids",
+      "count": 4
+    },
+    "36-40": {
+      "category": "women",
+      "count": 44
+    },
+    "36-41": {
+      "category": "women",
+      "count": 7
+    },
+    "37-41": {
+      "category": "women",
+      "count": 5
+    },
+    "38-42": {
+      "category": "men",
+      "count": 3
+    },
+    "38-43": {
+      "category": "men",
+      "count": 4
+    },
+    "39-44": {
+      "category": "men",
+      "count": 3
+    },
+    "39-40": {
+      "category": "men",
+      "count": 1
+    },
+    "39-43": {
+      "category": "men",
+      "count": 10
+    },
+    "40-45": {
+      "category": "men",
+      "count": 7
+    },
+    "40-44": {
+      "category": "men",
+      "count": 12
+    }
+  },
+  "rules": {
+    "kids": "Size starts at ≤34",
+    "women": "Size starts at 35-37",
+    "men": "Size starts at ≥38"
+  }
+}

@@ -39,7 +39,7 @@ export default function BrandCredibility() {
 
   return (
     <section id="advantages" className="py-24 bg-[#FEF1DE]" ref={ref}>
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="w-full px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
