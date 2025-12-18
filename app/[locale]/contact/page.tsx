@@ -10,7 +10,6 @@ export default function ContactPage() {
     const tFooter = useTranslations('footer');
     const [formData, setFormData] = useState({
         name: '',
-        email: '',
         phone: '',
         message: '',
     });
@@ -18,7 +17,7 @@ export default function ContactPage() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // Create WhatsApp message
-        const message = `Halo, saya ${formData.name}%0A%0AEmail: ${formData.email}%0ATelepon: ${formData.phone}%0A%0APesan: ${formData.message}`;
+        const message = `Halo, saya ${formData.name}%0A%0ATelepon: ${formData.phone}%0A%0APesan: ${formData.message}`;
         const whatsappUrl = `https://wa.me/6281234567890?text=${message}`;
         window.open(whatsappUrl, '_blank');
     };
@@ -101,20 +100,6 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            {/* Email */}
-                            <div className="flex items-start space-x-4">
-                                <div className="flex-shrink-0 w-10 h-10 bg-warm-sand/20 rounded-lg flex items-center justify-center">
-                                    <svg className="w-5 h-5 text-warm-sand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 className="text-lg font-heading font-semibold text-deep-brown mb-1">Email</h3>
-                                    <a href="mailto:info@newmc.com" className="text-sm md:text-base text-deep-brown/70 hover:text-warm-sand transition-colors">
-                                        {tFooter('email')}
-                                    </a>
-                                </div>
-                            </div>
 
                             {/* Business Hours */}
                             <div className="flex items-start space-x-4">
@@ -160,21 +145,6 @@ export default function ContactPage() {
                                     />
                                 </div>
 
-                                <div>
-                                    <label htmlFor="email" className="block text-sm md:text-base text-deep-brown font-medium mb-2">
-                                        {t('emailLabel')}
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        required
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        className="w-full px-4 py-3 text-sm md:text-base rounded-md border border-deep-brown/20 focus:border-warm-sand focus:ring-2 focus:ring-warm-sand/20 outline-none transition-all"
-                                        placeholder={t('emailPlaceholder')}
-                                    />
-                                </div>
 
                                 <div>
                                     <label htmlFor="phone" className="block text-sm md:text-base text-deep-brown font-medium mb-2">

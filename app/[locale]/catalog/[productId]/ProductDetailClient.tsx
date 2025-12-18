@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { Link } from '@/routing';
 import WhatsAppButton from '@/app/components/WhatsAppButton';
 import { products } from '@/app/data/products';
-import ProductCard from '@/app/components/ProductCard';
+import CompactProductCard from '@/app/components/CompactProductCard';
 
 export default function ProductDetailClient({ productId }: { productId: string }) {
     const t = useTranslations('catalog');
@@ -31,7 +31,7 @@ export default function ProductDetailClient({ productId }: { productId: string }
     // Get related products (same category, different product)
     const relatedProducts = products
         .filter((p) => product && p.category === product.category && p.id !== product.id)
-        .slice(0, 3);
+        .slice(0, 4);
 
     const [selectedImage, setSelectedImage] = useState<'product' | 'lifestyle'>('product');
 
@@ -56,8 +56,49 @@ export default function ProductDetailClient({ productId }: { productId: string }
         );
     }
 
+    // JSON-LD for AI Search Engines & Rich Snippets
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: product.name,
+        image: product.image,
+        description: `${product.name} - ${product.category} sandals for wholesale. MOQ ${product.moq} pcs. Size run ${product.sizeRun}.`,
+        brand: {
+            '@type': 'Brand',
+            name: 'New MC'
+        },
+        offers: {
+            '@type': 'Offer',
+            price: product.wholesalePrice,
+            priceCurrency: 'IDR',
+            availability: 'https://schema.org/InStock',
+            url: `https://new-mc-website.vercel.app/catalog/${productId}`,
+            priceValidUntil: '2026-12-31',
+            seller: {
+                '@type': 'Organization',
+                name: 'New MC Sandal'
+            }
+        },
+        additionalProperty: [
+            {
+                '@type': 'PropertyValue',
+                name: 'MOQ',
+                value: product.moq
+            },
+            {
+                '@type': 'PropertyValue',
+                name: 'Size Run',
+                value: product.sizeRun
+            }
+        ]
+    };
+
     return (
         <main className="min-h-screen bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Breadcrumb */}
             <section className="bg-[#FDFBF7] py-4">
                 <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -238,16 +279,103 @@ export default function ProductDetailClient({ productId }: { productId: string }
 
             {/* Related Products */}
             {relatedProducts.length > 0 && (
-                <section className="py-12 bg-[#FDFBF7]">
+                <section className="py-16 md:py-20 bg-gradient-to-b from-[#FDFBF7] to-white">
                     <div className="max-w-7xl mx-auto px-6 md:px-12">
-                        <h2 className="text-2xl md:text-3xl font-heading font-semibold text-deep-brown mb-8 text-center">
-                            {t('relatedProducts')}
-                        </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {relatedProducts.map((relatedProduct) => (
-                                <ProductCard key={relatedProduct.id} product={relatedProduct} />
+                        {/* Section Header */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="text-center mb-10"
+                        >
+                            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-deep-brown mb-3">
+                                {t('relatedProducts')}
+                            </h2>
+                            <p className="text-deep-brown/60 text-sm md:text-base max-w-2xl mx-auto">
+                                Produk serupa yang mungkin Anda sukai
+                            </p>
+                        </motion.div>
+
+                        {/* Desktop: Grid Layout */}
+                        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {relatedProducts.map((relatedProduct, index) => (
+                                <motion.div
+                                    key={relatedProduct.id}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                                >
+                                    <CompactProductCard product={relatedProduct} />
+                                </motion.div>
                             ))}
                         </div>
+
+                        {/* Mobile: Horizontal Scroll */}
+                        <div className="md:hidden">
+                            {/* Scroll Hint */}
+                            <div className="flex items-center justify-center gap-2 mb-4 text-xs text-deep-brown/50">
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                                </svg>
+                                <span>Geser untuk melihat lebih banyak</span>
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </div>
+
+                            <div className="overflow-x-auto scrollbar-hide snap-x snap-mandatory -mx-6 px-6">
+                                <div className="flex gap-4 pb-4">
+                                    {relatedProducts.map((relatedProduct) => (
+                                        <motion.div
+                                            key={relatedProduct.id}
+                                            className="min-w-[55%] sm:min-w-[40%] snap-start"
+                                            initial={{ opacity: 0, scale: 0.9 }}
+                                            whileInView={{ opacity: 1, scale: 1 }}
+                                            viewport={{ once: true }}
+                                            transition={{ duration: 0.3 }}
+                                        >
+                                            <CompactProductCard product={relatedProduct} />
+                                        </motion.div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Scroll Progress Dots */}
+                            <div className="flex justify-center gap-2 mt-4">
+                                {relatedProducts.map((_, index) => (
+                                    <div
+                                        key={index}
+                                        className="w-2 h-2 rounded-full bg-deep-brown/20 transition-all duration-300"
+                                    />
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* View All Link */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
+                            className="text-center mt-10"
+                        >
+                            <Link
+                                href="/catalog"
+                                className="inline-flex items-center gap-2 text-deep-brown hover:text-warm-sand font-semibold transition-colors duration-300 group"
+                            >
+                                <span>Lihat Semua Produk</span>
+                                <svg
+                                    className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </Link>
+                        </motion.div>
                     </div>
                 </section>
             )}

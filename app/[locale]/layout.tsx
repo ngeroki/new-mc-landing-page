@@ -10,6 +10,7 @@ const bodoniModa = Bodoni_Moda({
   subsets: ['latin'],
   variable: '--heading-font',
   display: 'swap',
+  adjustFontFallback: false,
 });
 
 const inter = Inter({
@@ -48,7 +49,7 @@ export default async function LocaleLayout({
           <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 9999 }}>
             <Navbar />
           </div>
-          <main style={{ paddingTop: '128px' }}>
+          <main className="pt-20 md:pt-[100px]">
             {children}
           </main>
           <Footer />

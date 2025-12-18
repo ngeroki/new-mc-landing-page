@@ -25,19 +25,19 @@ function CategorySection({
   const scrollRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
-  const [filter, setFilter] = useState<'all' | 'bestsellers' | 'new'>('all');
+  const [filter, setFilter] = useState<'bestsellers' | 'new'>('bestsellers');
 
   // Get all products for the category and apply filter
-  const filteredProducts = products.filter(p => {
-    if (p.category !== category) return false;
+  const allCategoryProducts = products.filter(p => p.category === category);
+  const filteredProducts = allCategoryProducts.filter(p => {
     if (filter === 'bestsellers') return p.isBestseller;
     if (filter === 'new') return p.isNew;
-    return true;
+    return false;
   });
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const scrollAmount = 400; // Scroll roughly one card width
+      const scrollAmount = 400;
       scrollRef.current.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth'
@@ -50,22 +50,26 @@ function CategorySection({
       <div className="w-full px-6 md:px-12 lg:px-20 max-w-[1800px] mx-auto relative group/section">
 
         {/* Header: Center Title & Filters */}
-        <div className="flex flex-col items-center justify-center mb-12 space-y-8">
+        <div className="flex flex-col items-center justify-center mb-12 space-y-6">
           {/* Category Title - Centered with Link */}
           <Link href={`/catalog?category=${category}`}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group flex items-center justify-center gap-4 cursor-pointer"
+              className="group flex flex-col items-center justify-center gap-2 cursor-pointer"
             >
-              <h2 className="text-4xl md:text-6xl font-heading font-normal text-deep-brown tracking-tight text-center group-hover:text-warm-sand transition-colors duration-300">
+              <h2 className="text-xl md:text-6xl font-heading font-normal text-deep-brown tracking-tight text-center group-hover:text-warm-sand transition-colors duration-300">
                 {title}
               </h2>
+              {/* Product Count */}
+              <p className="text-sm text-deep-brown/50 font-medium group-hover:text-warm-sand/70 transition-colors duration-300">
+                {allCategoryProducts.length} {t('productsAvailable')}
+              </p>
             </motion.div>
           </Link>
 
-          {/* Filter Toggles */}
+          {/* Filter Toggles - Only New Arrivals and Best Sellers */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -73,22 +77,32 @@ function CategorySection({
             className="flex flex-wrap justify-center gap-3"
           >
             <button
-              onClick={() => setFilter(filter === 'new' ? 'all' : 'new')}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${filter === 'new'
-                  ? 'bg-deep-brown text-white shadow-md'
-                  : 'bg-transparent text-deep-brown/70 hover:bg-deep-brown/5 hover:text-deep-brown'
+              onClick={() => setFilter('new')}
+              className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border-2 ${filter === 'new'
+                ? 'bg-deep-brown text-white border-deep-brown shadow-lg scale-105'
+                : 'bg-white text-deep-brown/70 border-deep-brown/20 hover:border-deep-brown/40 hover:text-deep-brown'
                 }`}
             >
-              {t('newArrivals')}
+              <span className="flex items-center gap-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                {t('newArrivals')}
+              </span>
             </button>
             <button
-              onClick={() => setFilter(filter === 'bestsellers' ? 'all' : 'bestsellers')}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${filter === 'bestsellers'
-                  ? 'bg-deep-brown text-white shadow-md'
-                  : 'bg-transparent text-deep-brown/70 hover:bg-deep-brown/5 hover:text-deep-brown'
+              onClick={() => setFilter('bestsellers')}
+              className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border-2 ${filter === 'bestsellers'
+                ? 'bg-deep-brown text-white border-deep-brown shadow-lg scale-105'
+                : 'bg-white text-deep-brown/70 border-deep-brown/20 hover:border-deep-brown/40 hover:text-deep-brown'
                 }`}
             >
-              {t('bestsellers')}
+              <span className="flex items-center gap-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+                {t('bestsellers')}
+              </span>
             </button>
           </motion.div>
         </div>
@@ -102,14 +116,14 @@ function CategorySection({
         >
           {filteredProducts.length > 0 ? (
             <div className="relative">
-              {/* Scroll Button Left - Always visible on mobile */}
+              {/* Scroll Button Left */}
               <button
                 onClick={() => scroll('left')}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 z-10 w-12 h-12 bg-white/90 backdrop-blur-sm shadow-md rounded-full flex items-center justify-center text-deep-brown opacity-100 md:opacity-0 md:group-hover/section:opacity-100 transition-opacity duration-300 pointer-events-auto hover:scale-110 hover:bg-deep-brown hover:text-white"
+                className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 z-10 w-12 h-12 bg-white/95 backdrop-blur-sm shadow-lg rounded-full flex items-center justify-center text-deep-brown opacity-100 md:opacity-0 md:group-hover/section:opacity-100 transition-all duration-300 pointer-events-auto hover:scale-110 hover:bg-deep-brown hover:text-white hover:shadow-xl"
                 aria-label="Scroll left"
               >
                 <svg className="w-5 h-5 -ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
 
@@ -134,14 +148,14 @@ function CategorySection({
                 ))}
               </div>
 
-              {/* Scroll Button Right - Always visible on mobile */}
+              {/* Scroll Button Right */}
               <button
                 onClick={() => scroll('right')}
-                className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 z-10 w-12 h-12 bg-white/90 backdrop-blur-sm shadow-md rounded-full flex items-center justify-center text-deep-brown opacity-100 md:opacity-0 md:group-hover/section:opacity-100 transition-opacity duration-300 pointer-events-auto hover:scale-110 hover:bg-deep-brown hover:text-white"
+                className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 z-10 w-12 h-12 bg-white/95 backdrop-blur-sm shadow-lg rounded-full flex items-center justify-center text-deep-brown opacity-100 md:opacity-0 md:group-hover/section:opacity-100 transition-all duration-300 pointer-events-auto hover:scale-110 hover:bg-deep-brown hover:text-white hover:shadow-xl"
                 aria-label="Scroll right"
               >
                 <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
 
@@ -155,6 +169,28 @@ function CategorySection({
               <p className="text-deep-brown/60 text-lg">{t('noProducts')}</p>
             </motion.div>
           )}
+        </motion.div>
+
+        {/* View All Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="flex justify-center mt-12"
+        >
+          <Link href={`/catalog?category=${category}`}>
+            <button className="group px-8 py-4 bg-deep-brown text-white font-semibold rounded-full hover:bg-warm-sand transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105 flex items-center gap-3">
+              <span>{t('viewAllProducts')}</span>
+              <svg
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </button>
+          </Link>
         </motion.div>
       </div>
     </section>

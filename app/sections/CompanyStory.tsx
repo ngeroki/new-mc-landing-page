@@ -37,11 +37,11 @@ export default function CompanyStory() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <h2 className="text-2xl md:text-5xl lg:text-6xl font-heading font-semibold text-deep-brown">
+            <h2 className="text-xl md:text-5xl lg:text-6xl font-heading font-semibold text-deep-brown">
               {t('title')}
             </h2>
             <div className="w-20 h-1 bg-warm-sand"></div>
-            <p className="text-lg text-deep-brown/80 leading-relaxed">
+            <p className="text-base md:text-lg text-deep-brown/80 leading-relaxed">
               {t('content')}
             </p>
           </motion.div>

@@ -94,7 +94,10 @@
         "description": "Sandal kasual dengan desain trendi untuk berbagai kesempatan."
       },
       "viewCatalog": "Lihat Katalog Lengkap",
-      "viewAll": "Lihat Semua"
+      "viewAll": "Lihat Semua",
+      "productsAvailable": "Produk Tersedia",
+      "allProducts": "Semua Produk",
+      "viewAllProducts": "Lihat Semua Produk"
     },
     "testimonials": {
       "title": "Apa Kata Mitra Kami",

@@ -44,7 +44,7 @@ export default function BrandCredibility() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl lg:text-5xl font-heading font-semibold text-deep-brown text-center mb-16"
+          className="text-xl md:text-4xl lg:text-5xl font-heading font-semibold text-deep-brown text-center mb-16"
         >
           {t('title')}
         </motion.h2>

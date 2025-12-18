@@ -94,7 +94,10 @@
       "description": "Casual sandals with trendy designs for various occasions."
     },
     "viewCatalog": "View Full Catalog",
-    "viewAll": "View All"
+    "viewAll": "View All",
+    "productsAvailable": "Products Available",
+    "allProducts": "All Products",
+    "viewAllProducts": "View All Products"
   },
   "testimonials": {
     "title": "What Our Partners Say",
