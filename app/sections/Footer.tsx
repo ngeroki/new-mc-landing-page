@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo */}
           <div className="md:col-span-2">
-            <Link href={`/${locale}/`} className="text-2xl font-heading font-bold mb-4 inline-block">
+            <Link href="/" className="text-2xl font-heading font-bold mb-4 inline-block">
               New MC
             </Link>
             <p className="text-deep-brown/80 mb-4">

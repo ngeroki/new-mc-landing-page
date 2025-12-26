@@ -6,7 +6,7 @@ interface WhatsAppButtonProps {
   phoneNumber?: string;
   message?: string;
   className?: string;
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'outline';
 }
 
 export default function WhatsAppButton({
@@ -24,9 +24,21 @@ export default function WhatsAppButton({
   };
 
   const baseClasses = 'inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-md transition-all duration-300 transform hover:scale-105 relative';
-  const variantClasses = variant === 'primary'
-    ? 'bg-warm-sand text-deep-brown hover:bg-[#B8965A] shadow-lg hover:shadow-xl'
-    : 'bg-deep-brown text-white hover:bg-[#3A2819] shadow-lg hover:shadow-xl';
+
+  const getVariantClasses = () => {
+    switch (variant) {
+      case 'primary':
+        return 'bg-warm-sand text-deep-brown hover:bg-[#B8965A] shadow-lg hover:shadow-xl';
+      case 'secondary':
+        return 'bg-deep-brown text-white hover:bg-[#3A2819] shadow-lg hover:shadow-xl';
+      case 'outline':
+        return 'bg-transparent border-2 border-deep-brown text-deep-brown hover:bg-deep-brown hover:text-white';
+      default:
+        return '';
+    }
+  };
+
+  const variantClasses = getVariantClasses();
 
   return (
     <button

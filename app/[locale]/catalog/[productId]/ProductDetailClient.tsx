@@ -160,9 +160,7 @@ export default function ProductDetailClient({ productId }: { productId: string }
                                         fill
                                         className="object-contain p-4"
                                     />
-                                    <div className="absolute bottom-2 left-0 right-0 text-center">
-                                        <span className="text-xs bg-white/90 px-2 py-1 rounded">{t('productLabel')}</span>
-                                    </div>
+
                                 </button>
                                 <button
                                     onClick={() => setSelectedImage('lifestyle')}
@@ -185,9 +183,7 @@ export default function ProductDetailClient({ productId }: { productId: string }
                                             </div>
                                         </div>
                                     )}
-                                    <div className="absolute bottom-2 left-0 right-0 text-center">
-                                        <span className="text-xs bg-white/90 px-2 py-1 rounded">{t('lifestyleLabel')}</span>
-                                    </div>
+
                                 </button>
                             </div>
                         </motion.div>

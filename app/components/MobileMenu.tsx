@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { Link, usePathname } from '@/routing';
 
 interface MobileMenuProps {
     navLinks: { href: string; label: string }[];
@@ -75,7 +74,7 @@ export default function MobileMenu({ navLinks, t, locale }: MobileMenuProps) {
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
-                            href={`/${locale}${link.href}`}
+                            href={link.href}
                             className={`block text-xl font-serif tracking-wide ${isActive(link.href)
                                 ? 'text-deep-brown font-medium'
                                 : 'text-deep-brown/70 hover:text-deep-brown'
@@ -88,16 +87,16 @@ export default function MobileMenu({ navLinks, t, locale }: MobileMenuProps) {
                     <div className="pt-6 mt-6 border-t border-deep-brown/10">
                         <div className="text-xs text-deep-brown/40 font-bold uppercase tracking-[0.2em] mb-4">{t('categories')}</div>
                         <div className="space-y-4 pl-4 border-l border-deep-brown/10">
-                            <Link href={`/${locale}/catalog?category=men`} className="block text-lg text-deep-brown/80 hover:text-deep-brown font-serif">{t('menSandals')}</Link>
-                            <Link href={`/${locale}/catalog?category=women`} className="block text-lg text-deep-brown/80 hover:text-deep-brown font-serif">{t('womenSandals')}</Link>
-                            <Link href={`/${locale}/catalog?category=kids`} className="block text-lg text-deep-brown/80 hover:text-deep-brown font-serif">{t('kidsSandals')}</Link>
+                            <Link href="/catalog?category=men" className="block text-lg text-deep-brown/80 hover:text-deep-brown font-serif">{t('menSandals')}</Link>
+                            <Link href="/catalog?category=women" className="block text-lg text-deep-brown/80 hover:text-deep-brown font-serif">{t('womenSandals')}</Link>
+                            <Link href="/catalog?category=kids" className="block text-lg text-deep-brown/80 hover:text-deep-brown font-serif">{t('kidsSandals')}</Link>
                         </div>
                     </div>
                 </nav>
 
                 {/* Footer */}
                 <div className="p-6 border-t border-deep-brown/10 bg-deep-brown/5">
-                    <Link href={`/${locale}`} className="block">
+                    <Link href="/" className="block">
                         <img src="/images/new-mc-logo-v5.png" alt="New MC Logo" className="h-10 w-auto opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
                     </Link>
                 </div>

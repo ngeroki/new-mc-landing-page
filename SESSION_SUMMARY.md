@@ -60,7 +60,7 @@
 
 ---
 
-### 6. Session Update: Hero Redesign & Navigation Fixes (Latest)
+### 6. Session Update: Hero Redesign & Navigation Fixes
 - **Mobile-First Hero Redesign**:
   - **Immersive Layout**: Switched to full-screen background slider (`h-[80vh]`) with bottom gradient overlay.
   - **Messaging**: Updated headline to "**Harga Grosir Tampilan Premium**" and optimized description readability.
@@ -73,7 +73,150 @@
 
 ---
 
+### 7. Session Update: Mobile UI/UX Refinements & Typography Standardization
+
+#### **Product Card Improvements**
+- **Mobile Image Optimization**:
+  - Maximized product image size on mobile by removing padding (`p-0` on mobile, `p-6` on desktop)
+  - Images now fill 100% of the square container for maximum visual impact
+  
+- **Typography Rebalancing** (Mobile):
+  - Product name: Increased from `text-lg` to `text-xl` (20px)
+  - Price: Reduced from `text-2xl` to `text-xl` (20px)
+  - Unit text ("/ pcs"): Reduced from `text-sm` to `text-xs` (12px)
+  - Better visual hierarchy and proportions on mobile devices
+
+- **Button Simplification** (Mobile):
+  - Changed text from "Lihat Detail Produk" to "Lihat Detail"
+  - Reduced padding: `px-4 py-2.5` (mobile) vs `px-6 py-3` (desktop)
+  - Added responsive font sizing: `text-sm` (mobile) vs `text-base` (desktop)
+
+- **Price Display Fix**:
+  - Center-aligned "Harga Grosir" label and price
+  - Added `flex-nowrap` and `whitespace-nowrap` to prevent price and "/ pcs" from wrapping to separate lines on mobile
+
+#### **Compact Product Card Refinements** (Related Products Section)
+- Center-aligned product name and price
+- Increased product name font size from `text-sm` to `text-base md:text-lg` for better proportionality
+- Fixed price wrapping issue on mobile with `flex-nowrap` and `whitespace-nowrap`
+
+#### **Homepage Typography Standardization**
+All section headings standardized to `text-xl` (20px) on mobile for consistency:
+- **Hero Section**: 
+  - Main heading: `text-xl` on mobile (was `text-4xl`)
+  - Mobile hero: `text-3xl` with increased spacing (`mb-4`, `space-y-6`)
+  - Description: `text-xs` on mobile for better distinction from title
+- **Brand Credibility**: `text-xl` on mobile (was `text-3xl`)
+- **Company Story**: `text-xl` on mobile (was `text-2xl`)
+- **Product Range**: Category titles `text-xl` on mobile (was `text-4xl`)
+- **Testimonials**: `text-xl` on mobile (was `text-2xl`)
+
+Desktop sizes remain consistent at `text-5xl` or `text-6xl` for all sections.
+
+#### **Navigation Fixes**
+- Fixed all mobile menu links to include locale prefix (`/${locale}/`)
+- Updated main nav links, category links, and footer logo link
+- Ensured proper navigation on both desktop and mobile
+
+---
+
+### 8. Session Update: SEO & AI Search Optimization (AIO)
+
+#### **Dynamic Metadata Implementation**
+- **Homepage** (`app/[locale]/page.tsx`):
+  - Added localized titles and descriptions for Indonesian and English
+  - Implemented OpenGraph metadata for social sharing
+  - Title: "New MC - Pusat Grosir Sandal Tangan Pertama Indonesia" (ID) / "New MC - First-hand Wholesale Sandals Supplier Indonesia" (EN)
+
+- **Catalog Page** (`app/[locale]/catalog/page.tsx`):
+  - Refactored to Server Component architecture for better SEO
+  - Created separate `CatalogClient.tsx` for client-side interactivity
+  - Added unique metadata: "Katalog Grosir Sandal Terbaru - New MC"
+
+- **Product Detail Pages** (`app/[locale]/catalog/[productId]/page.tsx`):
+  - Implemented `generateMetadata()` function for all 60+ products
+  - Each product has unique title: "Grosir [Product Name] - Supplier Sandal New MC"
+  - Dynamic descriptions include MOQ, size run, and pricing information
+
+#### **JSON-LD Structured Data** (Schema.org)
+- **LocalBusiness Schema** (Homepage):
+  - Business name, address, phone, and geo-coordinates
+  - Opening hours specification
+  - Social media links (Instagram)
+  - Helps AI agents answer "Where is New MC located?" queries
+
+- **Product Schema** (All Product Pages):
+  - Product name, image, and description
+  - Brand information
+  - Offer details: price (IDR), availability, seller
+  - Additional properties: MOQ and Size Run
+  - Enables rich snippets in Google Search results
+  - Helps AI agents provide accurate product information
+
+#### **Sitemap & Robots Configuration**
+- **Dynamic Sitemap** (`app/sitemap.ts`):
+  - Auto-generates entries for all static pages (Home, Catalog, About, Contact)
+  - Includes all 60+ product pages
+  - Supports both Indonesian (`/id/`) and English (`/en/`) locales
+  - Sets appropriate priorities and change frequencies
+
+- **Robots.txt** (`app/robots.ts`):
+  - Allows all crawlers to access the site
+  - Points to the sitemap for efficient indexing
+  - Disallows API routes
+
+#### **Benefits for Search Engines & AI**
+- **Traditional SEO**: Better Google rankings, rich snippets, improved CTR
+- **AI Search (AIO)**: Enables AI agents (Gemini, Perplexity, ChatGPT) to accurately extract and cite product information
+- **Structured Data**: Makes the site "machine-readable" for both search engines and AI models
+
+---
+
+### 9. Session Update: Hosting Platform Analysis
+
+#### **Platform Comparison**
+Analyzed three hosting options for the New MC website:
+
+1. **Vercel** (Current):
+   - ✅ Pros: Easy deployment, Next.js native support, zero configuration
+   - ❌ Cons: Limited bandwidth on free tier (100GB), expensive scaling ($40/100GB)
+   - Best for: Development and prototyping
+
+2. **Cloudflare Pages**:
+   - ✅ Pros: Unlimited bandwidth (free), global CDN, excellent for growth
+   - ❌ Cons: Next.js compatibility issues, Edge Runtime limitations, requires `next-on-pages` adapter
+   - Best for: Cost-conscious scaling without bandwidth fears
+
+3. **Local VPS** (IdCloudHost, Biznet GIO):
+   - ✅ Pros: Full control, Jakarta-based servers (fastest for Indonesian customers), flat pricing
+   - ❌ Cons: Requires manual maintenance, security updates, server management
+   - Best for: Data ownership and maximum local speed
+
+#### **Decision Criteria**
+- **Budget Priority**: Cloudflare Pages (Rp 0/month, unlimited bandwidth)
+- **Simplicity Priority**: Vercel (easiest to maintain)
+- **Speed Priority**: Local VPS (lowest latency for Indonesian customers)
+- **Growth Priority**: Cloudflare Pages (no surprise bills)
+
+#### **Current Status**
+- ✅ Code backed up to GitHub: `https://github.com/ngeroki/new-mc-landing-page`
+- ✅ Production deployed on Vercel: `https://new-mc-website-jjx1o6gcs-embos-projects.vercel.app`
+- ⏸️ Cloudflare Pages deployment: Ready to proceed (next session)
+
+---
+
 ## ⏭️ Next Steps
-1.  **Mobile Testing**: Verify the new Hero layout on physical devices using the Local IP.
-2.  **Product Verification**: Click through homepage products on mobile to ensure all links resolve correctly.
-3.  **Performance**: Monitor the full-width image slider performance on 3G networks.
+1. **Cloudflare Pages Setup**:
+   - Install `@cloudflare/next-on-pages` and `wrangler` dependencies
+   - Configure project for Cloudflare compatibility
+   - Deploy and test performance vs. Vercel
+   
+2. **Performance Testing**:
+   - Compare load times between Vercel and Cloudflare
+   - Test mobile performance on 3G networks
+   - Verify all features work on Cloudflare's Edge Runtime
+
+3. **SEO Monitoring**:
+   - Submit sitemap to Google Search Console
+   - Monitor indexing of product pages
+   - Track rich snippet appearance in search results

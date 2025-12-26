@@ -1,7 +1,6 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
+import { Link, usePathname, useRouter } from '@/routing';
 import { useTranslations, useLocale } from 'next-intl';
 import { useState, useEffect } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -10,6 +9,7 @@ import MobileMenu from './MobileMenu';
 export default function Navbar() {
   const t = useTranslations('nav');
   const locale = useLocale();
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
@@ -53,7 +53,7 @@ export default function Navbar() {
   // Search Icon Component for reusability
   const SearchIcon = ({ className = "" }: { className?: string }) => (
     <Link
-      href={`/${locale}/catalog`}
+      href="/catalog"
       className={`text-deep-brown/75 hover:text-deep-brown transition-all duration-300 p-1 hover:scale-110 ${className}`}
       aria-label="Search"
     >
@@ -98,45 +98,44 @@ export default function Navbar() {
           {/* Left: Navigation Links */}
           <div className="flex items-center justify-start">
             <div className="flex items-center gap-8 lg:gap-12 pl-2">
-              <Link href={`/${locale}/about`} className={getLinkClasses('/about')}>
+              <Link href="/about" className={getLinkClasses('/about')}>
                 {t('about')}
                 <AnimatedUnderline isActive={isActive('/about')} />
               </Link>
 
               {/* Catalog Dropdown */}
               <div className="relative group/dropdown h-[100px] flex items-center">
-                <Link
-                  href={`/${locale}/catalog`}
-                  className={`${getLinkClasses('/catalog')} flex items-center group-hover/dropdown:text-deep-brown`}
+                <button
+                  className={`${getLinkClasses('/catalog')} flex items-center group-hover/dropdown:text-deep-brown cursor-pointer`}
                 >
                   {t('catalog')}
                   <ChevronIcon />
                   <AnimatedUnderline isActive={isActive('/catalog')} />
-                </Link>
+                </button>
 
                 {/* Dropdown Menu */}
                 <div className="absolute top-[100px] left-0 w-64 bg-[#FDFBF7] shadow-lg border-t border-deep-brown/10 opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-200 transform translate-y-2 group-hover/dropdown:translate-y-0 text-left">
                   <div className="py-2">
-                    <Link
-                      href={`/${locale}/catalog`}
-                      className="block px-6 py-3 text-[13px] font-bold tracking-widest text-deep-brown hover:bg-black/5 transition-colors uppercase border-b border-deep-brown/5"
+                    <button
+                      onClick={() => router.push('/catalog')}
+                      className="block w-full text-left px-6 py-3 text-[13px] font-bold tracking-widest text-deep-brown hover:bg-black/5 transition-colors uppercase border-b border-deep-brown/5"
                     >
                       {t('allProducts')}
-                    </Link>
+                    </button>
 
                     <div className="pt-3 pb-1 px-6 text-[10px] text-deep-brown/40 font-bold uppercase tracking-[0.2em]">{t('categories')}</div>
-                    <Link href={`/${locale}/catalog?category=men`} className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('menSandals')}</Link>
-                    <Link href={`/${locale}/catalog?category=women`} className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('womenSandals')}</Link>
-                    <Link href={`/${locale}/catalog?category=kids`} className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('kidsSandals')}</Link>
+                    <Link href="/catalog?category=men" className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('menSandals')}</Link>
+                    <Link href="/catalog?category=women" className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('womenSandals')}</Link>
+                    <Link href="/catalog?category=kids" className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('kidsSandals')}</Link>
 
                     <div className="pt-3 pb-1 px-6 text-[10px] text-deep-brown/40 font-bold uppercase tracking-[0.2em] border-t border-deep-brown/5 mt-2">{t('specialCollections')}</div>
-                    <Link href={`/${locale}/catalog?filter=new`} className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('newArrivals')}</Link>
-                    <Link href={`/${locale}/catalog?filter=bestseller`} className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('bestSellers')}</Link>
+                    <Link href="/catalog?filter=new" className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('newArrivals')}</Link>
+                    <Link href="/catalog?filter=bestseller" className="block px-6 py-2 text-[14px] text-deep-brown/80 hover:text-deep-brown hover:bg-black/5 transition-colors">{t('bestSellers')}</Link>
                   </div>
                 </div>
               </div>
 
-              <Link href={`/${locale}/contact`} className={getLinkClasses('/contact')}>
+              <Link href="/contact" className={getLinkClasses('/contact')}>
                 {t('contact')}
                 <AnimatedUnderline isActive={isActive('/contact')} />
               </Link>
@@ -145,7 +144,7 @@ export default function Navbar() {
 
           {/* Center: Logo - Now navigates to current locale home */}
           <div className="flex justify-center items-center h-full py-2">
-            <Link href={`/${locale}`} className="relative block h-[80px] w-auto transition-all duration-300 hover:opacity-90 hover:scale-[1.02]">
+            <Link href="/" className="relative block h-[80px] w-auto transition-all duration-300 hover:opacity-90 hover:scale-[1.02]">
               <img
                 src="/images/new-mc-logo-v5.png"
                 alt="New MC Logo"
@@ -172,7 +171,7 @@ export default function Navbar() {
 
           {/* Center: Logo - Now navigates to current locale home */}
           <div className="absolute left-1/2 -translate-x-1/2">
-            <Link href={`/${locale}`} className="block h-14 w-auto">
+            <Link href="/" className="block h-14 w-auto">
               <img
                 src="/images/new-mc-logo-v5.png"
                 alt="New MC Logo"

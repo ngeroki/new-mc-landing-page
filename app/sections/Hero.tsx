@@ -58,8 +58,7 @@ export default function Hero() {
                   {t('catalog')}
                 </Link>
                 <WhatsAppButton
-                  className="inline-flex items-center justify-center px-8 py-4 text-base md:text-lg font-medium border-2 border-deep-brown text-deep-brown hover:bg-deep-brown hover:text-white rounded transition-all duration-300 hover:scale-105"
-                  variant="secondary"
+                  variant="outline"
                 />
               </div>
             </motion.div>
@@ -158,8 +157,8 @@ export default function Hero() {
                   {t('catalog')}
                 </Link>
                 <WhatsAppButton
-                  className="px-8 py-3 text-base font-medium border border-white text-white hover:bg-white hover:text-deep-brown rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105"
-                  variant="secondary"
+                  variant="outline"
+                  className="!border-white !text-white hover:!bg-white hover:!text-deep-brown rounded-full"
                 />
               </div>
             </motion.div>

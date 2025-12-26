@@ -117,7 +117,8 @@
   "cta": {
     "headline": "Ready to Expand Your Store's Collection?",
     "subheadline": "We serve wholesale orders in both large and small scales.",
-    "button": "Contact via WhatsApp"
+    "catalogButton": "Enter Exclusive Catalog",
+    "whatsappButton": "Contact via WhatsApp"
   },
   "catalog": {
     "all": "All",

@@ -29,13 +29,32 @@ function CatalogContent() {
         const categoryParam = searchParams.get('category');
         const filterParam = searchParams.get('filter');
 
+        // Check if we have any search params at all
+        const hasAnyParams = Array.from(searchParams.keys()).length > 0;
+
+        // If no parameters at all, reset everything to defaults
+        if (!hasAnyParams) {
+            setSelectedCategory('all');
+            setSelectedFilter('all');
+            setSelectedType('all');
+            setSortBy('bestseller');
+            setSearchQuery('');
+            return;
+        }
+
+        // Apply filters from URL if they exist
         if (categoryParam && ['men', 'women', 'kids'].includes(categoryParam)) {
             setSelectedCategory(categoryParam);
+        } else {
+            setSelectedCategory('all');
         }
-        if (filterParam && ['all', 'bestseller', 'new'].includes(filterParam)) {
+
+        if (filterParam && ['bestseller', 'new'].includes(filterParam)) {
             setSelectedFilter(filterParam);
             if (filterParam === 'bestseller') setSortBy('bestseller');
             if (filterParam === 'new') setSortBy('newest');
+        } else {
+            setSelectedFilter('all');
         }
     }, [searchParams]);
 
