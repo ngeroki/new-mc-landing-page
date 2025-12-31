@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node copy-public.js",
     "start": "next start",
     "export": "next build",
     "pages:build": "npx @cloudflare/next-on-pages",
