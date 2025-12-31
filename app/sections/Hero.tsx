@@ -17,8 +17,8 @@ export default function Hero() {
   const bestsellerImages = [
     '/mcpolo-terlaris/Leytisa/Leytisa-Lifestyle-01.png',
     '/mcpolo-terlaris/ALZA/ALZA-Lifestyle-01.png',
-    '/mcpolo-terlaris/ADV 01/ADV 01-Lifestyle-01.png',
-    '/mcpolo-terlaris/Ulir 45/Ulir 45-Lifestyle-01.png',
+    '/mcpolo-terlaris/ADV-01/ADV-01-Lifestyle-01.png',
+    '/mcpolo-terlaris/Ulir-45/Ulir-45-Lifestyle-01.png',
   ];
 
   // Auto-rotate images every 4 seconds
