@@ -1,7 +1,7 @@
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './routing';
 
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 export default createMiddleware({
     ...routing,

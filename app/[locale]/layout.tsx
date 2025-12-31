@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/routing';
 
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 import { Bodoni_Moda, Inter } from 'next/font/google';
 import '../globals.css';
