@@ -201,22 +201,106 @@ Analyzed three hosting options for the New MC website:
 #### **Current Status**
 - ✅ Code backed up to GitHub: `https://github.com/ngeroki/new-mc-landing-page`
 - ✅ Production deployed on Vercel: `https://new-mc-website-jjx1o6gcs-embos-projects.vercel.app`
-- ⏸️ Cloudflare Pages deployment: Ready to proceed (next session)
+- ✅ **Production deployed on Cloudflare Pages**: `https://new-mc-landing-page.pages.dev`
+
+---
+
+### 10. Session Update: Cloudflare Pages Deployment (Dec 31, 2025)
+
+#### **Successful Deployment to Cloudflare Pages**
+After extensive troubleshooting and configuration, the New MC website is now live on Cloudflare Pages with unlimited bandwidth and global CDN distribution.
+
+**Live URL**: `https://new-mc-landing-page.pages.dev`
+
+#### **Deployment Process & Troubleshooting**
+
+**Initial Setup**:
+- Created Cloudflare account (ngeroki.ncon@gmail.com)
+- Connected GitHub repository via Cloudflare Pages
+- Installed dependencies: `@cloudflare/next-on-pages@1.13.16` and `wrangler@4.54.0`
+
+**Configuration Challenges Resolved**:
+
+1. **Peer Dependency Conflicts**:
+   - **Issue**: `@cloudflare/next-on-pages` required Next.js >=14.3.0, but stable version was 14.2.33
+   - **Solution**: Added environment variable `NPM_CONFIG_LEGACY_PEER_DEPS=true` to bypass strict version checks
+
+2. **Edge Runtime Compatibility**:
+   - **Issue**: Next.js 14.2 doesn't support `runtime = 'edge'` directly
+   - **Solution**: Changed to `runtime = 'experimental-edge'` in both `middleware.ts` and `app/[locale]/layout.tsx`
+   - **Commits**: 
+     - `97a6970`: Added edge runtime for Cloudflare compatibility
+     - `795cf7c`: Updated to experimental-edge runtime
+
+3. **Node.js Compatibility Flag**:
+   - **Issue**: "Node.JS Compatibility Error - no nodejs_compat compatibility flag set"
+   - **Solution**: Added `nodejs_compat` compatibility flag in Cloudflare Pages Settings → Functions → Compatibility flags
+
+#### **Final Configuration**
+
+**Build Settings**:
+- **Framework preset**: Next.js
+- **Build command**: `npx @cloudflare/next-on-pages@1`
+- **Build output directory**: `.vercel/output`
+- **Production branch**: `main`
+
+**Environment Variables**:
+- `NODE_VERSION`: `20`
+- `NPM_CONFIG_LEGACY_PEER_DEPS`: `true`
+
+**Compatibility Flags**:
+- `nodejs_compat` (required for Node.js runtime features)
+
+#### **Benefits of Cloudflare Pages**
+
+**Free Tier Advantages**:
+- ✅ **Unlimited bandwidth** (vs. Vercel's 100GB/month limit)
+- ✅ **Unlimited requests** (no traffic caps)
+- ✅ **Unlimited projects** (host multiple sites on one account)
+- ✅ **500 builds/month** (automatic deployment on every GitHub push)
+- ✅ **Global CDN** (300+ data centers worldwide)
+- ✅ **Automatic HTTPS** (free SSL certificates)
+- ✅ **Custom domains** (unlimited, free)
+
+**Build Quota Explanation**:
+- A "build" = one deployment/compilation of your code
+- Triggered by: GitHub push, manual retry, or rollback
+- 500/month = ~16 deployments per day (more than sufficient)
+
+#### **Deployment Comparison**
+
+| Feature | Cloudflare Pages | Vercel |
+|---------|-----------------|--------|
+| **Live URL** | new-mc-landing-page.pages.dev | new-mc-website-jjx1o6gcs-embos-projects.vercel.app |
+| **Bandwidth** | Unlimited | 100GB/month |
+| **Cost** | Free forever | Free (with limits) |
+| **Best for** | Production, high traffic | Development, testing |
+| **Auto-deploy** | ✅ Yes | ✅ Yes |
 
 ---
 
 ## ⏭️ Next Steps
-1. **Cloudflare Pages Setup**:
-   - Install `@cloudflare/next-on-pages` and `wrangler` dependencies
-   - Configure project for Cloudflare compatibility
-   - Deploy and test performance vs. Vercel
-   
-2. **Performance Testing**:
-   - Compare load times between Vercel and Cloudflare
-   - Test mobile performance on 3G networks
-   - Verify all features work on Cloudflare's Edge Runtime
+1. **Performance Testing**:
+   - Compare load times between Vercel and Cloudflare deployments
+   - Test mobile performance on 3G networks in Indonesia
+   - Verify all features work correctly on Cloudflare's Edge Runtime
 
-3. **SEO Monitoring**:
+2. **Custom Domain Setup** (Optional):
+   - Purchase domain (e.g., newmc.com)
+   - Add custom domain in Cloudflare Pages settings
+   - Configure DNS records
+
+3. **Analytics Setup**:
+   - Add Google Analytics for detailed traffic tracking
+   - Enable Cloudflare Web Analytics (privacy-friendly, free)
+   - Monitor bandwidth usage and visitor statistics
+
+4. **SEO Monitoring**:
    - Submit sitemap to Google Search Console
    - Monitor indexing of product pages
    - Track rich snippet appearance in search results
+
+5. **Production Decision**:
+   - Evaluate performance of both deployments
+   - Choose primary production URL
+   - Update marketing materials and social media links
