@@ -1,0 +1,64 @@
+﻿
+> new-mc-landing-page@1.0.0 build
+> next build
+
+  Γû▓ Next.js 14.2.33
+
+   Creating an optimized production build ...
+node.exe : 
+At C:\Program 
+Files\nodejs\npm.ps1:29 
+char:3
++   & $NODE_EXE $NPM_CLI_JS 
+$args
++   ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo          
+    : NotSpecified: (:Stri  
+  ng) [], RemoteException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+> Build error occurred
+Error: Page /middleware 
+provided runtime 'edge', 
+the edge runtime for 
+rendering is currently 
+experimental. Use runtime 
+'experimental-edge' instead.
+    at getPageStaticInfo (D:
+\new-mc-website\node_modules
+\next\dist\build\analysis\ge
+t-page-static-info.js:463:23
+)
+    at async getStaticInfoIn
+cludingLayouts (D:\new-mc-we
+bsite\node_modules\next\dist
+\build\entries.js:108:28)
+    at async D:\new-mc-websi
+te\node_modules\next\dist\bu
+ild\entries.js:410:32
+    at async Promise.all 
+(index 0)
+    at async Promise.all 
+(index 1)
+    at async 
+createEntrypoints (D:\new-mc
+-website\node_modules\next\d
+ist\build\entries.js:550:5)
+    at async 
+Span.traceAsyncFn (D:\new-mc
+-website\node_modules\next\d
+ist\trace\trace.js:154:20)
+    at async 
+webpackBuildImpl (D:\new-mc-
+website\node_modules\next\di
+st\build\webpack-build\impl.
+js:104:25)
+    at async D:\new-mc-websi
+te\node_modules\next\dist\bu
+ild\index.js:1006:111
+    at async 
+Span.traceAsyncFn (D:\new-mc
+-website\node_modules\next\d
+ist\trace\trace.js:154:20)
