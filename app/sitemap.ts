@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { products } from '@/app/data/products';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://new-mc-website.vercel.app';
+    const baseUrl = 'https://newmc.id';
     const locales = ['id', 'en'];
     const staticPages = ['', '/catalog', '/about', '/contact'];
 

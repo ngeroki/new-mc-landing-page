@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/api/',
         },
-        sitemap: 'https://new-mc-website.vercel.app/sitemap.xml',
+        sitemap: 'https://newmc.id/sitemap.xml',
     };
 }
