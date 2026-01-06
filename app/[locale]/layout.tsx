@@ -8,6 +8,11 @@ import '../globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../sections/Footer';
 import BackToTop from '../components/BackToTop';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://newmc.id'),
+};
 
 const bodoniModa = Bodoni_Moda({
   subsets: ['latin'],

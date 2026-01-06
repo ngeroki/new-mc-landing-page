@@ -13,20 +13,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   const title = locale === 'id'
-    ? 'New MC - Pusat Grosir Sandal Tangan Pertama Indonesia'
-    : 'New MC - First-hand Wholesale Sandals Supplier Indonesia';
+    ? 'New MC - Pusat Grosir Sandal Tangan Pertama Indonesia | Supplier Sandal Bogor'
+    : 'New MC - First-hand Wholesale Sandals Supplier Indonesia | Bogor Sandal Supplier';
 
   const description = locale === 'id'
-    ? 'Distributor grosir sandal tangan pertama dengan harga terbaik. Menyediakan berbagai model sandal pria, wanita, dan anak dengan kualitas premium dan MOQ rendah.'
-    : 'First-hand wholesale sandals distributor at the best prices. Providing various models of men, women, and kids sandals with premium quality and low MOQ.';
+    ? 'Supplier grosir sandal tangan pertama di Bogor dengan harga terbaik. Menyediakan berbagai model sandal pria, wanita, dan anak untuk toko Anda. Siap kirim seluruh Indonesia.'
+    : 'First-hand wholesale sandals supplier in Bogor at the best prices. Providing various men, women, and kids sandal models for your store. Nationwide shipping available.';
 
   return {
     title,
     description,
+    alternates: {
+      canonical: `https://newmc.id/${locale}/`,
+      languages: {
+        'id-ID': 'https://newmc.id/id/',
+        'en-US': 'https://newmc.id/en/',
+      },
+    },
     openGraph: {
       title,
       description,
-      images: ['/images/company-story.jpg'],
+      url: `https://newmc.id/${locale}/`,
+      siteName: 'New MC Sandal',
+      locale: locale === 'id' ? 'id_ID' : 'en_US',
+      type: 'website',
+      images: [
+        {
+          url: '/images/company-story.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'New MC Sandal Wholesale',
+        },
+      ],
     },
   };
 }
@@ -39,22 +57,23 @@ export default async function HomePage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'New MC Sandal',
-    image: 'https://new-mc-website.vercel.app/images/company-story.jpg',
-    '@id': 'https://new-mc-website.vercel.app',
-    url: 'https://new-mc-website.vercel.app',
-    telephone: '+6281234567890', // Placeholder, verify with user
+    image: 'https://newmc.id/images/company-story.jpg',
+    '@id': 'https://newmc.id',
+    url: 'https://newmc.id',
+    telephone: '+6281234567890',
+    priceRange: 'Rp',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Pusat Grosir Sandal',
-      addressLocality: 'Jakarta',
-      addressRegion: 'DKI Jakarta',
-      postalCode: '10000',
+      streetAddress: 'Blok B. Lt. Dasar. No. 60-62, P.S Kebon Kembang',
+      addressLocality: 'Bogor',
+      addressRegion: 'Jawa Barat',
+      postalCode: '16124',
       addressCountry: 'ID'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: -6.1751,
-      longitude: 106.8650
+      latitude: -6.5971,
+      longitude: 106.7949
     },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
