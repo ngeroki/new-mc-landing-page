@@ -7,8 +7,8 @@ export default createMiddleware({
     ...routing,
     // Always use locale prefix in the URL
     localePrefix: 'always',
-    // Detect locale from accept-language header
-    localeDetection: true
+    // Disable locale detection to force defaultLocale (id)
+    localeDetection: false
 });
 
 export const config = {
