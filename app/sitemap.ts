@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Generate static page entries for each locale
     const staticEntries = locales.flatMap((locale) =>
         staticPages.map((page) => ({
-            url: `${baseUrl}/${locale}${page}`,
+            url: `${baseUrl}/${locale}${page}/`,
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
             priority: page === '' ? 1 : 0.8,
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Generate product page entries for each locale
     const productEntries = locales.flatMap((locale) =>
         products.map((product) => ({
-            url: `${baseUrl}/${locale}/catalog/${encodeURIComponent(product.id)}`,
+            url: `${baseUrl}/${locale}/catalog/${encodeURIComponent(product.id)}/`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
             priority: 0.6,
